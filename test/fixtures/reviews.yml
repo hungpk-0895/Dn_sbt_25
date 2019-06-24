@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  review_content: MyText
+  review_at: 2019-06-25 10:34:11
+  reply_review: 1
+  count_liked: 1
+  comment_content: MyText
+  comment_at: 2019-06-25 10:34:11
+  reply_comment: 1
+  rating_score: 1
+  user: one
+  tour: one
+
+two:
+  review_content: MyText
+  review_at: 2019-06-25 10:34:11
+  reply_review: 1
+  count_liked: 1
+  comment_content: MyText
+  comment_at: 2019-06-25 10:34:11
+  reply_comment: 1
+  rating_score: 1
+  user: two
+  tour: two
