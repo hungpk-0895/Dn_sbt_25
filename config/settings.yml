@@ -5,3 +5,4 @@ valid:
     max_length: 100
   password:
     min_length: 6
+remember: "1"

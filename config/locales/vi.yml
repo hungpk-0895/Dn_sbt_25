@@ -9,6 +9,11 @@ vi:
       txtNews: "Địa điểm mới"
       txtContact: "Liên hệ"
       txtSingup: "Đăng kí"
+      txtLogin: "Đăng nhập"
+      txtLogout: "Đăng xuất"
+      txtBooking: "Tour của bạn"
+      txtProfile: "Cá nhân"
+      menu_account: "Tài khoản"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
@@ -32,6 +37,16 @@ vi:
       title: "Giới thiệu"
     news:
       title: "Địa điểm mới"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      btn_submit: "Đăng nhập"
+      check_box_remember: "Nhớ tài khoản"
+      txtSingup: "Đăng kí mới tại đây!"
+    create:
+      fail: "Sai email hoặc mật khẩu"
   users:
     form:
       username: "Họ và tên (*)"
@@ -44,6 +59,12 @@ vi:
       check_email: "Vui lòng kiểm tra email của bạn"
     new:
       title: "Tạo tài khoản"
+    show:
+      txtProfile: "Trang cá nhân"
+      email: "Email"
+      phone: "Số điện thoại"
+      btn_edit: "Chỉnh sửa"
+      not_found: "Không tìm thấy người dùng"
   helpers:
     base_title: "Du lịch"
   user_mailer:

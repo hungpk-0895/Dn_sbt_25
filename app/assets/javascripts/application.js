@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require bootstrap.min
-//= require bootstrap-sprockets
 //= require rails-ujs
 //= require activestorage
 //= require_tree ../../../vendor/assets/javascripts/customs

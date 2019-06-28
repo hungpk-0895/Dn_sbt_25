@@ -23,7 +23,20 @@
               <li class="main_nav_item"><%= link_to t(".txtOffers"), offers_path %></li>
               <li class="main_nav_item"><%= link_to t(".txtNews"), news_path %></li>
               <li class="main_nav_item"><%= link_to t(".txtContact"), contact_path %></li>
-              <li class="main_nav_item"><%= link_to t(".txtSingup"), signup_path %></li>
+              <% if logged_in? %>
+                <li class = "main_nav_item">
+                  <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+                    <%= t(".menu_account") %><b class = "caret"></b>
+                  </a>
+                  <ul class = "dropdown-menu">
+                    <li><%= link_to t(".txtProfile"), current_user %></li>
+                    <li><%= link_to t(".txtBooking"), "#" %>
+                    <li class = "divider">
+                    <li><%= link_to t(".txtLogout"), logout_path, method: :delete %></li>
+                  </ul>
+              <% else %>
+                <li class="main_nav_item"><%= link_to t(".txtLogin"), login_path %></li>
+              <% end %>
             </ul>
           </nav>
 

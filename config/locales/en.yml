@@ -9,6 +9,11 @@ en:
       txtNews: "News"
       txtContact: "Contact"
       txtSingup: "Sign up"
+      txtLogin: "Login"
+      txtLogout: "Logout"
+      txtBooking: "Your booking"
+      txtProfile: "Profile"
+      menu_account: "Account"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
@@ -32,6 +37,16 @@ en:
       title: "About"
     news:
       title: "Hot"
+  sessions:
+    new:
+      title: "Login"
+      email: "Email"
+      password: "Password"
+      btn_submit: "Log in"
+      check_box_remember: "Remember me"
+      txtSingup: "Signup here!"
+    create:
+      fail: "Invalid email or password"
   users:
     form:
       username: "Full name (*)"
@@ -44,6 +59,12 @@ en:
       check_email: "Check your email please"
     new:
       title: "Create Account"
+    show:
+      txtProfile: "Profile"
+      email: "Email"
+      phone: "Phone"
+      btn_edit: "Edit profile"
+      not_found: "Not found user"
   helpers:
     base_title: "Book Tour"
   user_mailer:
