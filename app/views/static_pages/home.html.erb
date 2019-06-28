@@ -1,0 +1,243 @@
+<% provide(:title, t(".title")) %>
+<!-- Home -->
+
+<div class="home">
+	<div class="home_background" style="background-image:url(/assets/home.jpg)"></div>
+	<div class="home_content">
+		<div class="home_content_inner">
+			<div class="home_text_large">discover</div>
+			<div class="home_text_small">Discover new worlds</div>
+		</div>
+	</div>
+</div>
+
+<!-- Find Form -->
+
+<div class="find">
+	<!-- Image by https://unsplash.com/@garciasaldana_ -->
+	<div class="find_background parallax-window" data-parallax="scroll" data-image-src="/assets/find.jpg" data-speed="0.8"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="find_title text-center"><%= t (".txtFind")%></div>
+			</div>
+			<div class="col-12">
+				<div class="find_form_container">
+					<form action="#" id="find_form" class="find_form d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-between justify-content-start flex-wrap">
+						<div class="find_item">
+							<div><%= t (".txtDestination") %>:</div>
+							<input type="text" class="destination find_input" required="required" placeholder="Keyword here">
+						</div>
+						<div class="find_item">
+							<div><%= t (".txtAdventureType") %>:</div>
+							<select name="adventure" id="adventure" class="dropdown_item_select find_input">
+								<option>Categories</option>
+								<option>Categories</option>
+								<option>Categories</option>
+							</select>
+						</div>
+						<div class="find_item">
+							<div><%= t (".txtMinPrice") %></div>
+							<select name="min_price" id="min_price" class="dropdown_item_select find_input">
+								<option>&nbsp;</option>
+								<option>Price</option>
+								<option>Price</option>
+							</select>
+						</div>
+						<div class="find_item">
+							<div><%= t (".txtMaxPrice") %></div>
+							<select name="max_price" id="max_price" class="dropdown_item_select find_input">
+								<option>&nbsp;</option>
+								<option>Price</option>
+								<option>Price</option>
+							</select>
+						</div>
+						<button class="button find_button"><%= t (".btnFind") %></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Top Destinations -->
+
+<div class="top">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="section_title text-center">
+					<h2><%= t (".txtTopRate") %></h2>
+				</div>
+			</div>
+		</div>
+		<div class="row top_content">
+
+			<div class="col-lg-3 col-md-6 top_col">
+
+				<!-- Top Destination Item -->
+				<div class="top_item">
+					<a href="#">
+						<div class="top_item_image"><img src="/assets/top_1.jpg" alt="https://unsplash.com/@sgabriel"></div>
+						<div class="top_item_content">
+							<div class="top_item_price">From $890</div>
+							<div class="top_item_text">Paris, France</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 top_col">
+
+				<!-- Top Destination Item -->
+				<div class="top_item">
+					<a href="#">
+						<div class="top_item_image"><img src="/assets/top_2.jpg" alt="https://unsplash.com/@jenspeter"></div>
+						<div class="top_item_content">
+							<div class="top_item_price">From $890</div>
+							<div class="top_item_text">Italian Riviera</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 top_col">
+
+				<!-- Top Destination Item -->
+				<div class="top_item">
+					<a href="#">
+						<div class="top_item_image"><img src="/assets/top_3.jpg" alt="https://unsplash.com/@anikindimitry"></div>
+						<div class="top_item_content">
+							<div class="top_item_price">From $890</div>
+							<div class="top_item_text">Cinque Terre</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-lg-3 col-md-6 top_col">
+
+				<!-- Top Destination Item -->
+				<div class="top_item">
+					<a href="#">
+						<div class="top_item_image"><img src="/assets/top_4.jpg" alt="https://unsplash.com/@hellolightbulb"></div>
+						<div class="top_item_content">
+							<div class="top_item_price">From $890</div>
+							<div class="top_item_text">Santorini, Greece</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- Popular -->
+
+<div class="popular">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="section_title text-center">
+					<h2><%= t (".txtTopBooking") %></h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="popular_content d-flex flex-md-row flex-column flex-wrap align-items-md-center align-items-start justify-content-md-between justify-content-start">
+
+					<!-- Popular Item -->
+					<div class="popular_item">
+						<a href="offers.html">
+							<img src="/assets/popular_1.jpg" alt="image by Egzon Bytyqi">
+							<div class="popular_item_content">
+								<div class="popular_item_price">From $890</div>
+								<div class="popular_item_title">Turkey</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Popular Item -->
+					<div class="popular_item">
+						<a href="offers.html">
+							<img src="/assets/popular_2.jpg" alt="https://unsplash.com/@michael75">
+							<div class="popular_item_content">
+								<div class="popular_item_price">From $890</div>
+								<div class="popular_item_title">Hawai</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Popular Item -->
+					<div class="popular_item">
+						<a href="offers.html">
+							<img src="/assets/popular_3.jpg" alt="https://unsplash.com/@sapegin">
+							<div class="popular_item_content">
+								<div class="popular_item_price">From $890</div>
+								<div class="popular_item_title">Ireland</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Popular Item -->
+					<div class="popular_item">
+						<a href="offers.html">
+							<img src="/assets/popular_4.jpg" alt="https://unsplash.com/@kensuarez">
+							<div class="popular_item_content">
+								<div class="popular_item_price">From $890</div>
+								<div class="popular_item_title">Thailand</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Popular Item -->
+					<div class="popular_item">
+						<a href="offers.html">
+							<img src="/assets/popular_5.jpg" alt="https://unsplash.com/@noahbasle">
+							<div class="popular_item_content">
+								<div class="popular_item_price">From $890</div>
+								<div class="popular_item_title">Croatia</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Popular Item -->
+					<div class="popular_item">
+						<a href="offers.html">
+							<img src="/assets/popular_6.jpg" alt="https://unsplash.com/@seb">
+							<div class="popular_item_content">
+								<div class="popular_item_price">From $890</div>
+								<div class="popular_item_title">Bali</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Popular Item -->
+					<div class="popular_item">
+						<a href="offers.html">
+							<img src="/assets/popular_7.jpg" alt="https://unsplash.com/@nevenkrcmarek">
+							<div class="popular_item_content">
+								<div class="popular_item_price">From $890</div>
+								<div class="popular_item_title">France</div>
+							</div>
+						</a>
+					</div>
+
+					<!-- Popular Item -->
+					<div class="popular_item">
+						<a href="offers.html">
+							<img src="/assets/popular_8.jpg" alt="https://unsplash.com/@bergeryap87">
+							<div class="popular_item_content">
+								<div class="popular_item_price">From $890</div>
+								<div class="popular_item_title">Vietnam</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+</div>

@@ -1,0 +1,44 @@
+<!-- Header -->
+
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="header_container d-flex flex-row align-items-center justify-content-start">
+
+          <!-- Logo -->
+          <div class="logo_container">
+            <div class="logo">
+              <div>destino</div>
+              <div>travel agency</div>
+              <div class="logo_image"><img src="/assets/logo.png" alt=""></div>
+            </div>
+          </div>
+
+          <!-- Main Navigation -->
+          <nav class="main_nav ml-auto">
+            <ul class="main_nav_list">
+              <li class="main_nav_item active"><%= link_to t(".txtHome"), root_path %></li>
+              <li class="main_nav_item"><%= link_to t(".txtAboutUs"), about_path %></li>
+              <li class="main_nav_item"><%= link_to t(".txtOffers"), offers_path %></li>
+              <li class="main_nav_item"><%= link_to t(".txtNews"), news_path %></li>
+              <li class="main_nav_item"><%= link_to t(".txtContact"), contact_path %></li>
+            </ul>
+          </nav>
+
+          <!-- Search -->
+          <div class="search">
+            <form action="#" class="search_form">
+              <input type="search" name="search_input" class="search_input ctrl_class" required="required" placeholder="Keyword">
+              <button type="submit" class="search_button ml-auto ctrl_class"><img src="/assets/search.png" alt=""></button>
+            </form>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
