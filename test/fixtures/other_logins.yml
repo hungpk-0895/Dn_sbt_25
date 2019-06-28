@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fb_token: MyString
+  gg_token: MyString
+  tw_token: MyString
+  user: one
+
+two:
+  fb_token: MyString
+  gg_token: MyString
+  tw_token: MyString
+  user: two
