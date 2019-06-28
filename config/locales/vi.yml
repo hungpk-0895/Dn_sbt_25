@@ -1,8 +1,6 @@
 vi:
   layouts:
     application:
-      language_en: "English"
-      language_vi: "Tiếng Việt"
       title: "Dự án đầu tiên"
     header:
       txtHome: "Trang chủ"
@@ -10,6 +8,15 @@ vi:
       txtOffers: "Gói ưu đãi"
       txtNews: "Địa điểm mới"
       txtContact: "Liên hệ"
+      txtSingup: "Đăng kí"
+    footer:
+      language_en: "English"
+      language_vi: "Tiếng Việt"
+  shared:
+    error_messages:
+      form_error:
+        one: "Biểu mẫu chứa %{count} lỗi"
+        other: "Biểu mẫu chứa %{count} lỗi"
   static_pages:
     home:
       title: "Trang chủ"
@@ -25,5 +32,26 @@ vi:
       title: "Giới thiệu"
     news:
       title: "Địa điểm mới"
+  users:
+    form:
+      username: "Họ và tên (*)"
+      email: "Email (*)"
+      phone: "Số điện thoại"
+      password: "Mật khẩu (*)"
+      re_password: "Nhập lại mật khẩu (*)"
+      btn_create: "Tạo tài khoản"
+    create:
+      check_email: "Vui lòng kiểm tra email của bạn"
+    new:
+      title: "Tạo tài khoản"
   helpers:
     base_title: "Du lịch"
+  user_mailer:
+    activate:
+      subject:
+        "Kích hoạt tài khoản"
+    account_activation:
+      txtWelcome: "Chào mừng đến với trang đặt vé du lịch"
+      txtHi: "Chào"
+      content: "Bấm vào đường dẫn phía dưới để kích hoạt tài khoản của bạn"
+      link: "Kích hoạt"
