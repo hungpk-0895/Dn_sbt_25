@@ -1,4 +1,29 @@
 en:
   layouts:
     application:
-      title: "Book Tour"
+      language_en: "English"
+      language_vi: "Tiếng Việt"
+      title: "Project 1"
+    header:
+      txtHome: "Home"
+      txtAboutUs: "About us"
+      txtOffers: "Offers"
+      txtNews: "News"
+      txtContact: "Contact"
+  static_pages:
+    home:
+      title: "Home"
+      txtFind: "Find destination of your life"
+      txtDestination: "Destination"
+      txtAdventureType: "Adventure type"
+      txtMinPrice: "Min Price"
+      txtMaxPrice: "Max Price"
+      btnFind: "Find"
+      txtTopRate: "Top Rating Destination"
+      txtTopBooking: "Top Booking Destination"
+    about:
+      title: "About"
+    news:
+      title: "Hot"
+  helpers:
+    base_title: "Book Tour"

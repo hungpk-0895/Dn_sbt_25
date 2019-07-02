@@ -1,4 +1,29 @@
 vi:
   layouts:
     application:
-      title: "Đặt tour"
+      language_en: "English"
+      language_vi: "Tiếng Việt"
+      title: "Dự án đầu tiên"
+    header:
+      txtHome: "Trang chủ"
+      txtAboutUs: "Giới thiệu"
+      txtOffers: "Gói ưu đãi"
+      txtNews: "Địa điểm mới"
+      txtContact: "Liên hệ"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      txtFind: "Tìm kiếm địa điểm cho đời bạn"
+      txtDestination: "Địa điểm"
+      txtAdventureType: "Kiểu phiêu lưu"
+      txtMinPrice: "Giá tối thiểu"
+      txtMaxPrice: "Giá tối đa"
+      btnFind: "Tìm"
+      txtTopRate: "Địa điểm được đánh giá cao"
+      txtTopBooking: "Địa điểm được đến nhiều nhất"
+    about:
+      title: "Giới thiệu"
+    news:
+      title: "Địa điểm mới"
+  helpers:
+    base_title: "Du lịch"
