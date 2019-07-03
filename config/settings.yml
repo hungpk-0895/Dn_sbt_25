@@ -5,6 +5,9 @@ valid:
     max_length: 100
   password:
     min_length: 6
+  category:
+    name:
+      max_length: 100
 remember: "1"
 limit_page:
   users: 10

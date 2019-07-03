@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_03_055554) do
+ActiveRecord::Schema.define(version: 2019_07_11_101516) do
 
   create_table "bankings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "information"
@@ -35,9 +35,11 @@ ActiveRecord::Schema.define(version: 2019_07_03_055554) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
-    t.integer "parent_id"
+    t.integer "parent_id", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "deleted_at"
+    t.index ["deleted_at"], name: "index_categories_on_deleted_at"
   end
 
   create_table "other_logins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -86,6 +88,8 @@ ActiveRecord::Schema.define(version: 2019_07_03_055554) do
     t.bigint "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "score", default: 0.0
+    t.integer "count_views", default: 0
     t.index ["category_id"], name: "index_tours_on_category_id"
   end
 

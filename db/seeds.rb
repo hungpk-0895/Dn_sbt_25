@@ -23,3 +23,15 @@ User.create!(name:  "Admin",
                password: password,
                password_confirmation: password)
 end
+
+5.times do |n|
+   name = Faker::Games::Dota.team
+  Category.create!(name: name,
+                   parent_id: 0)
+end
+
+5.times do |n|
+   name = Faker::Games::Dota.team
+  Category.create!(name: name,
+                   parent_id: 1)
+end
