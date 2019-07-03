@@ -1,4 +1,36 @@
 en:
+  admin:
+    categories:
+      load_parent_cat:
+        not_found_parent: "Not found parent categories"
+      load_categoires:
+        not_found_categories: "Not found categories"
+      index:
+        title: "Categories"
+        btn_delete: "Delete"
+        btn_create: "Create"
+      destroy:
+        success: "Delete category success"
+        fail: "Delete category fail"
+      new:
+        title: "Create Category"
+        btn_create: "Create"
+      create:
+        success: "Create success"
+        fail: "Create fail"
+    users:
+      index:
+        username: "Username"
+        email: "Email"
+        phone: "Phone"
+        title: "Manager Users"
+        btn_delete: "Delete"
+      destroy:
+        success: "Delete success"
+        fail: "Delete fail"
+        not_have_role: "Can not delete admin"
+      load_user:
+        not_found: "Not found user"
   layouts:
     application:
       title: "Project 1"
@@ -14,6 +46,8 @@ en:
       txtBooking: "Your booking"
       txtProfile: "Profile"
       menu_account: "Account"
+      txtUsers: "Manager Users"
+      txtCategory: "Manager Category"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"

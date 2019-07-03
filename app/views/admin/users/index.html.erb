@@ -1,0 +1,26 @@
+<% provide(:title, t(".title")) %>
+<div class = "form_padding">
+  <%= will_paginate %>
+    <table class="table">
+      <thead>
+        <tr>
+          <th><%= t ".username" %></th>
+          <th><%= t ".email" %></th>
+          <th><%= t ".phone" %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @users.each do |user| %>
+          <tr>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td><%= user.phone %></td>
+            <% if !user.admin? %>
+            <td><%= link_to t(".btn_delete"), admin_user_path(user), method: :delete, data: {confirm: "You sure?"}%></td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <%= will_paginate %>
+</div>

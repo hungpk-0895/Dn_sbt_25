@@ -2,6 +2,7 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   attr_accessor :remember_token
   before_save :downcase_email
+  enum role: {guess: 0, admin: 1}
   has_secure_password
 
   has_many :bookings, dependent: :destroy
