@@ -37,6 +37,18 @@ vi:
       user:
         btn_delete: "Xóa"
         confirm: "Bạn chắc chắn không?"
+  bookings:
+    create:
+      pending: "Yêu cầu đặt tour của bạn đang được xử lí."
+      error: "Có lỗi xảy ra. Vui lòng thử lại sau."
+    load_tour:
+      not_found: "Không tìm thấy tour"
+    new:
+      btn_confirm: "Xác nhận"
+      require_login: "Vui lòng đăng nhập"
+  booking_mailer:
+    notification:
+      subject: "Thông báo đặt tour du lịch"
   layouts:
     application:
       title: "Dự án đầu tiên"
@@ -63,6 +75,8 @@ vi:
       form_error:
         one: "Biểu mẫu chứa %{count} lỗi"
         other: "Biểu mẫu chứa %{count} lỗi"
+    new_tours:
+      book: "Đặt tour"
   static_pages:
     home:
       title: "Trang chủ"

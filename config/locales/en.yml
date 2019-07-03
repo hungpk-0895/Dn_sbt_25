@@ -37,6 +37,18 @@ en:
       user:
         btn_delete: "Delete"
         confirm: "You sure?"
+  bookings:
+    create:
+      pending: "Your booking is pendding"
+      error: "Something errors. Please try again later"
+    load_tour:
+      not_found: "Not found tour"
+    new:
+      btn_confirm: "Confirm"
+      require_login: "You must login"
+  booking_mailer:
+    notification:
+      subject: "Send mail notification booking tour"
   layouts:
     application:
       title: "Project 1"
@@ -63,6 +75,8 @@ en:
       form_error:
         one: "This form contain %{count} error"
         other: "This form contains %{count} errors"
+    new_tours:
+      book: "Book"
   static_pages:
     home:
       title: "Home"

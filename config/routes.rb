@@ -19,5 +19,7 @@ Rails.application.routes.draw do
     end
     resources :users
     resources :tours, only: %i(index show)
+    resources :bookings
+    resources :notifications
   end
 end

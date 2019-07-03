@@ -1,0 +1,12 @@
+<h1>Booking tour notification</h1>
+<p>Hi <%= @user.name %>,</p>
+<p>You just booking tour: <%= @tour.name %></p>
+<ul>
+  <li>
+    <p>Place: <%= @tour.place %></p>
+    <p>Price: <%= @tour.price %></p>
+    <p>Start time: <%= l(@tour.start_time, format: Settings.format_time) %></p>
+    <p>Finish time: <%= l(@tour.finish_time, format: Settings.format_time) %></p>
+  </li>
+</ul>
+<p>Thank you!</p>

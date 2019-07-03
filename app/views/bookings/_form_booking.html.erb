@@ -1,0 +1,14 @@
+<div class="post_text">
+  <p><%= t(".name") %>:<%= current_user.name %></p>
+  <p><%= t(".email") %>:<%= current_user.email %></p>
+  <p><%= t(".phone") %>:<%= current_user.phone %></p>
+  <p><%= t(".tour_name") %>:<%= @tour.name %></p>
+  <p><%= t(".tour_price") %>:<%= @tour.price %></p>
+  <p><%= t(".tour_start_time") %>:<%= @tour.start_time %></p>
+</div>
+<%= form_for @booking do |f| %>
+  <%= f.hidden_field :tour_id, value: @tour.id %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+  <%= f.hidden_field :payment_id, value: 1 %>
+  <%= f.submit yield(:btn_confirm), class: "button button_3 elements_button" %>
+<% end %>

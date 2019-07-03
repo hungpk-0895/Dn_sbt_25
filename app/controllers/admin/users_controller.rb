@@ -34,8 +34,8 @@ class Admin::UsersController < ApplicationController
     redirect_to root_path
   end
 
-  def load_user
-    @users = User.sort_name.paginate(page: params[:page],
-      per_page: Settings.limit_page.users)
+  def load_users
+    @users = User.sort_name.paginate page: params[:page],
+      per_page: Settings.limit_page.users
   end
 end
