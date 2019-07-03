@@ -3,7 +3,7 @@ en:
     categories:
       load_parent_cat:
         not_found_parent: "Not found parent categories"
-      load_categoy:
+      load_category:
         not_found_category: "Not found categories"
       index:
         title: "Categories"
@@ -116,12 +116,9 @@ en:
       success: "Update success"
   helpers:
     base_title: "Book Tour"
-  user_mailer:
-    activate:
-      subject:
-        "Active Account"
-    account_activation:
-      txtWelcome: "Welcome to Booking Tour"
-      txtHi: "Hi"
-      content: "Click the link below for activate your account"
-      link: "Active"
+  tours:
+    find_tour:
+      not_found: "Not found tour"
+    show:
+      book: "Book"
+      price: "Price"
