@@ -1,8 +1,6 @@
 en:
   layouts:
     application:
-      language_en: "English"
-      language_vi: "Tiếng Việt"
       title: "Project 1"
     header:
       txtHome: "Home"
@@ -10,6 +8,15 @@ en:
       txtOffers: "Offers"
       txtNews: "News"
       txtContact: "Contact"
+      txtSingup: "Sign up"
+    footer:
+      language_en: "English"
+      language_vi: "Tiếng Việt"
+  shared:
+    error_messages:
+      form_error:
+        one: "This form contain %{count} error"
+        other: "This form contains %{count} errors"
   static_pages:
     home:
       title: "Home"
@@ -25,5 +32,26 @@ en:
       title: "About"
     news:
       title: "Hot"
+  users:
+    form:
+      username: "Full name (*)"
+      email: "Email (*)"
+      phone: "Phone"
+      password: "Password (*)"
+      re_password: "Password confirmation (*)"
+      btn_create: "Create account"
+    create:
+      check_email: "Check your email please"
+    new:
+      title: "Create Account"
   helpers:
     base_title: "Book Tour"
+  user_mailer:
+    activate:
+      subject:
+        "Active Account"
+    account_activation:
+      txtWelcome: "Welcome to Booking Tour"
+      txtHi: "Hi"
+      content: "Click the link below for activate your account"
+      link: "Active"

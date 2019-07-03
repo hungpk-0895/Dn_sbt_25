@@ -14,5 +14,5 @@
  *
  *= require_tree ../../../vendor/assets/stylesheets/customs
  *= require_self
-
+ *= require custom
  */

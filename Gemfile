@@ -3,10 +3,12 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.1"
 
+gem "bcrypt", "3.1.12"
 gem "bootsnap", ">= 1.1.0", require: false
-gem "bootstrap", "~> 4.0.0"
+gem "bootstrap-sass"
 gem "bootstrap-will_paginate"
 gem "coffee-rails", "~> 4.2"
+gem "config"
 gem "faker", "1.9.2"
 gem "font-awesome-sass", "~> 4.7.0"
 gem "jbuilder", "~> 2.5"

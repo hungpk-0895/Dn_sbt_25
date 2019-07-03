@@ -1,0 +1,7 @@
+valid:
+  email:
+    max_length: 255
+  name:
+    max_length: 100
+  password:
+    min_length: 6
