@@ -16,5 +16,5 @@
   <%= f.label :password_confirmation, t(".re_password") %>
   <%= f.password_field :password_confirmation, class: "form-control" %>
 
-  <%= f.submit t(".btn_create"), class: "btn btn-primary" %>
+  <%= f.submit yield(:btn_submit), class: "btn btn-primary" %>
 <%end%>

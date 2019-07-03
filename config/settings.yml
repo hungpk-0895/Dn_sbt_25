@@ -6,3 +6,5 @@ valid:
   password:
     min_length: 6
 remember: "1"
+limit_page:
+  users: 10

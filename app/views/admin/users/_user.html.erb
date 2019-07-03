@@ -1,0 +1,8 @@
+<tr>
+  <td><%= user.name %></td>
+  <td><%= user.phone %></td>
+  <td><%= user.email %></td>
+  <% if !user.admin? %>
+    <td><%= link_to t(".btn_delete"), admin_user_path(user), method: :delete, data: {confirm: t(".confirm")}%></td>
+  <% end %>
+</tr>

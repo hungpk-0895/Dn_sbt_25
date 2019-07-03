@@ -1,4 +1,22 @@
 en:
+  admin:
+    users:
+      index:
+        username: "Username"
+        email: "Email"
+        phone: "Phone"
+        title: "Manager Users"
+        not_have_permission: "You don't have permission"
+        require_login: "Login please"
+      destroy:
+        success: "Delete success"
+        fail: "Delete fail"
+        not_have_role: "Can not delete admin"
+      load_user:
+        not_found: "Not found user"
+      user:
+        btn_delete: "Delete"
+        confirm: "You sure?"
   layouts:
     application:
       title: "Project 1"
@@ -13,6 +31,7 @@ en:
       txtLogout: "Logout"
       txtBooking: "Your booking"
       txtProfile: "Profile"
+      txtUsers: "Mangager User"
       menu_account: "Account"
     footer:
       language_en: "English"
@@ -48,6 +67,8 @@ en:
     create:
       fail: "Invalid email or password"
   users:
+    index:
+      title: "Users"
     form:
       username: "Full name (*)"
       email: "Email (*)"
@@ -57,14 +78,20 @@ en:
       btn_create: "Create account"
     create:
       check_email: "Check your email please"
+    edit:
+      title: "Edit profile"
+      btn_edit: "Save changes"
     new:
       title: "Create Account"
+      btn_create: "Create account"
     show:
       txtProfile: "Profile"
       email: "Email"
       phone: "Phone"
       btn_edit: "Edit profile"
       not_found: "Not found user"
+    update:
+      success: "Update success"
   helpers:
     base_title: "Book Tour"
   user_mailer:

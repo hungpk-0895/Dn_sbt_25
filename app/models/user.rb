@@ -2,6 +2,7 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   attr_accessor :remember_token
   before_save :downcase_email
+  enum role: {guess: 0, admin: 1}
   has_secure_password
 
   has_many :bookings, dependent: :destroy
@@ -20,7 +21,7 @@ class User < ApplicationRecord
     length: {maximum: Settings.valid.email.max_length},
     presence: true, uniqueness: {case_sensitive: false}
 
-  scope :sort_name, ->{order name: :desc}
+  scope :sort_name, ->{order :name}
 
   class << self
     def digest string
