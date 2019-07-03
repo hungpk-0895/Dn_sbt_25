@@ -261,20 +261,21 @@ span.picture {
   }
 }
 
-  .user_avatars {
-    overflow: auto;
-    margin-top: 10px;
-    .gravatar {
-      margin-top: 1px 1px;
-    }
-    a {
-      padding: 0;
-    }
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin-top: 1px 1px;
   }
-
-  .users.follow {
+  a {
     padding: 0;
   }
-  .form_padding {
-    padding-top: 180px;
-  }
+}
+
+.users.follow {
+  padding: 0;
+}
+
+.form_padding {
+  padding-top: 180px;
+}

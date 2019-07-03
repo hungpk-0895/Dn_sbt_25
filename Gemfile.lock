@@ -111,13 +111,13 @@ GEM
       dry-initializer (~> 3.0)
       dry-logic (~> 1.0)
       dry-types (~> 1.0)
-    dry-types (1.0.1)
+    dry-types (1.1.0)
       concurrent-ruby (~> 1.0)
       dry-container (~> 0.3)
       dry-core (~> 0.4, >= 0.4.4)
       dry-equalizer (~> 0.2, >= 0.2.2)
       dry-inflector (~> 0.1, >= 0.1.2)
-      dry-logic (~> 1.0)
+      dry-logic (~> 1.0, >= 1.0.2)
     erubi (1.8.0)
     execjs (2.7.0)
     faker (1.9.2)
@@ -266,7 +266,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (= 3.1.12)
   bootsnap (>= 1.1.0)
-  bootstrap-sass
+  bootstrap-sass (>= 3.0.0)
   bootstrap-will_paginate
   byebug
   capybara (>= 2.15)
@@ -296,4 +296,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   2.0.1
+   2.0.2

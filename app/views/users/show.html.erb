@@ -1,0 +1,11 @@
+<% provide(:title, @user.name) %>
+<div class = "form_padding">
+  <div class = "row">
+    <div class = "col-md-6 col-md-offset-3">
+      <h1><%= t(".txtProfile") %></h1>
+      <p><%= t(".email") %>: <%= @user.email %></p>
+      <p><%= t(".phone") %>: <%= @user.phone %></p>
+      <%= link_to t(".btn_edit"), edit_user_path(current_user) %>
+  </div>
+  </div>
+</div>
