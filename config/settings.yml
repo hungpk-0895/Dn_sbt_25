@@ -11,3 +11,4 @@ valid:
 remember: "1"
 limit_page:
   users: 10
+format_time: "%-d/%-m/%y: %H:%M"

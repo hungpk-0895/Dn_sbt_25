@@ -1,0 +1,19 @@
+<%= will_paginate @new_tours %>
+  <% @new_tours.each do |new_tour| %>
+    <div class="news_post">
+      <div class="post_title"><%= link_to new_tour.name ,tour_url(new_tour) %></div>
+      <div class="post_meta">
+        <ul>
+          <li><%= new_tour.created_at.strftime(Settings.format_time) %></li>
+        </ul>
+      </div>
+      <div class="post_image">
+        <img src="/assets/news_1.jpg" alt="https://unsplash.com/@simonmigaj">
+        <a href="#"><div class="post_image_box text-center">+</div></a>
+      </div>
+      <div class="post_text">
+        <p><%= new_tour.description %></p>
+      </div>
+    </div>
+  <% end %>
+<%= will_paginate @new_tours %>

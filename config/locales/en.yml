@@ -101,6 +101,9 @@ en:
       not_found: "Not found user"
   helpers:
     base_title: "Book Tour"
+  tours:
+    find_tour:
+      not_found: "Not found tour"
   user_mailer:
     activate:
       subject:
