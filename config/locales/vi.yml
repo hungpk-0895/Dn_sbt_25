@@ -1,4 +1,22 @@
 vi:
+  admin:
+    users:
+      index:
+        username: "Tên người dùng"
+        email: "Địa chỉ email"
+        phone: "Số điện thoại"
+        title: "Quản lí người dùng"
+        not_have_permission: "Bạn không có quyền truy cập"
+        require_login: "Vui lòng đăng nhập"
+      destroy:
+        success: "Xóa thành công"
+        fail: "Xóa thất bại"
+        not_have_role: "Không thể xóa quản trị viên"
+      load_user:
+        not_found: "Không tìm thấy người dùng"
+      user:
+        btn_delete: "Xóa"
+        confirm: "Bạn chăc chắn xóa không?"
   layouts:
     application:
       title: "Dự án đầu tiên"
@@ -13,6 +31,7 @@ vi:
       txtLogout: "Đăng xuất"
       txtBooking: "Tour của bạn"
       txtProfile: "Cá nhân"
+      txtUsers: "Quản lí người dùng"
       menu_account: "Tài khoản"
     footer:
       language_en: "English"
@@ -48,6 +67,8 @@ vi:
     create:
       fail: "Sai email hoặc mật khẩu"
   users:
+    index:
+      title: "Người dùng"
     form:
       username: "Họ và tên (*)"
       email: "Email (*)"
@@ -59,12 +80,18 @@ vi:
       check_email: "Vui lòng kiểm tra email của bạn"
     new:
       title: "Tạo tài khoản"
+      btn_create: "Tạo tài khoản"
+    edit:
+      title: "Chỉnh sửa thông tin cá nhân"
+      btn_edit: "Lưu thay đổi"
     show:
       txtProfile: "Trang cá nhân"
       email: "Email"
       phone: "Số điện thoại"
       btn_edit: "Chỉnh sửa"
       not_found: "Không tìm thấy người dùng"
+    update:
+      success: "Cập nhật thành công"
   helpers:
     base_title: "Du lịch"
   user_mailer:
