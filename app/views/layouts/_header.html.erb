@@ -30,7 +30,7 @@
                   </a>
                   <ul class = "dropdown-menu">
                     <li><%= link_to t(".txtProfile"), current_user %></li>
-                    <li><%= link_to t(".txtBooking"), "#" %>
+                    <li><%= link_to t(".txtBooking"), bookings_path %>
                     <% if current_user.admin? %>
                       <li><%= link_to t(".txtUsers"), admin_users_path %>
                       <li><%= link_to t(".txtCategory"), admin_categories_path %>
