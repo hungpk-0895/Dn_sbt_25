@@ -1,0 +1,24 @@
+<tr>
+  <td><%= booking.user_name %></td>
+  <td><%= booking.user_email %></td>
+  <td><%= booking.tour_name %></td>
+  <td><%= booking.tour_place %></td>
+  <% if params[:locale] == Settings.locale_en %>
+    <td><%= number_to_currency booking.tour_price %></td>
+  <% else %>
+    <td><%= number_to_currency change_en_to_vn(booking.tour_price) %></td>
+  <% end %>
+  <td><%= l booking.tour_start_time, format: Settings.format_time %></td>
+  <td><%= l booking.tour_finish_time, format: Settings.format_time %></td>
+  <td><%= booking.status %></td>
+  <td><%= l booking.created_at, format: Settings.format_time %></td>
+  <td>
+    <%if booking.pending? %>
+      <%= link_to t(".btn_accept"), admin_booking_accept_path(booking_id: booking.id), url: {action: "accept_booking", controller: "admin:bookings", method: :put} %>
+      <%= link_to t(".btn_reject"), admin_booking_reject_path(booking_id: booking.id), url: {action: "reject_booking", controller: "admin:bookings", method: :put} %>
+    <% end %>
+  </td>
+  <td>
+    <%= link_to t(".btn_delete"), admin_booking_path(booking), method: :delete %>
+  </td>
+</tr>

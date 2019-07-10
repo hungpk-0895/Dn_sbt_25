@@ -16,6 +16,9 @@ Rails.application.routes.draw do
       resources :users, only: %i(index destroy)
       resources :categories
       resources :tours
+      resources :bookings, only: %i(index update destroy)
+      get "/booking/accept", to: "bookings#accept_booking"
+      get "/booking/reject", to: "bookings#reject_booking"
     end
     resources :users
     resources :tours, only: %i(index show)

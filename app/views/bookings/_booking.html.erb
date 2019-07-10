@@ -1,7 +1,11 @@
 <tr>
   <td><%= booking.tour_name %></td>
   <td><%= booking.tour_place %></td>
-  <td><%= number_to_currency booking.tour_price %></td>
+    <% if params[:locale] == Settings.locale_en %>
+    <td><%= number_to_currency booking.tour_price %></td>
+  <% else %>
+    <td><%= number_to_currency change_en_to_vn(booking.tour_price) %></td>
+  <% end %>
   <td><%= l booking.tour_start_time, format: Settings.format_time %></td>
   <td><%= l booking.tour_finish_time, format: Settings.format_time %></td>
   <td><%= booking.status %></td>
