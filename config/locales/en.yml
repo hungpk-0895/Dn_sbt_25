@@ -1,11 +1,31 @@
 en:
   admin:
+    categories:
+      load_parent_cat:
+        not_found_parent: "Not found parent categories"
+      load_categoy:
+        not_found_category: "Not found categories"
+      index:
+        title: "Categories"
+        btn_delete: "Delete"
+        btn_create: "Create"
+        confirm: "You sure"
+      destroy:
+        success: "Delete category success"
+        fail: "Delete category fail"
+      new:
+        title: "Create Category"
+        btn_create: "Create"
+      create:
+        success: "Create success"
+        fail: "Create fail"
     users:
       index:
         username: "Username"
         email: "Email"
         phone: "Phone"
         title: "Manager Users"
+        btn_delete: "Delete"
         not_have_permission: "You don't have permission"
         require_login: "Login please"
       destroy:
@@ -33,6 +53,8 @@ en:
       txtProfile: "Profile"
       txtUsers: "Mangager User"
       menu_account: "Account"
+      txtUsers: "Manager Users"
+      txtCategory: "Manager Category"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"

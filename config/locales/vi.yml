@@ -1,11 +1,31 @@
 vi:
   admin:
+    categories:
+      load_parent_cat:
+        not_found_parent: "Không tìm thấy danh mục cha"
+      load_categoires:
+        not_found_categories: "Không tìm thấy danh mục"
+      index:
+        title: "Danh mục"
+        btn_delete: "Xóa"
+        btn_create: "Tạo danh mục"
+        confirm: "Bạn chắc chắn không?"
+      destroy:
+        success: "Xóa danh mục thành công"
+        fail: "Xóa danh mục thất bại"
+      new:
+        title: "Tạo danh mục"
+        btn_create: "Tạo danh mục"
+      create:
+        success: "Tạo danh mục thành công"
+        fail: "Tạo danh mục thất bại"
     users:
       index:
         username: "Tên người dùng"
         email: "Địa chỉ email"
         phone: "Số điện thoại"
         title: "Quản lí người dùng"
+        btn_delete: "Xóa"
         not_have_permission: "Bạn không có quyền truy cập"
         require_login: "Vui lòng đăng nhập"
       destroy:
@@ -16,7 +36,7 @@ vi:
         not_found: "Không tìm thấy người dùng"
       user:
         btn_delete: "Xóa"
-        confirm: "Bạn chăc chắn xóa không?"
+        confirm: "Bạn chắc chắn không?"
   layouts:
     application:
       title: "Dự án đầu tiên"
@@ -33,6 +53,8 @@ vi:
       txtProfile: "Cá nhân"
       txtUsers: "Quản lí người dùng"
       menu_account: "Tài khoản"
+      txtUsers: "Quản lí tài khoản"
+      txtCategory: "Quản lí danh mục"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
