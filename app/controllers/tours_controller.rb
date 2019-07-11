@@ -1,7 +1,10 @@
 class ToursController < ApplicationController
   before_action :find_tour, only: :show
 
-  def show; end
+  def show
+    @comment = Review.new
+    @reply_comment = Review.new
+  end
 
   private
   def find_tour

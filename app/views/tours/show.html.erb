@@ -35,6 +35,18 @@
                 <div class="post_text">
                   <p>Finish time: <%= l @tour.finish_time, format: Settings.format_time %></p>
                 </div>
+
+                <div class = "form_padding">
+                  <div id = "count-comment">Comment</div>
+                  <div>
+                    <% load_comment_of_tour(@tour) %>
+                    <%= render "shared/comments" %>
+                    <%= will_paginate @comments %>
+                  </div>
+                  <div class = "form-comment">
+                    <%= render "shared/form_comment" %>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -1,0 +1,7 @@
+<%= form_for(@comment, url: {action: "create", controller: "reviews"}, remote: true) do |f| %>
+  <%= f.hidden_field :tour_id, value: @tour.id %>
+  <%= f.hidden_field :reply_comment, value: 0 %>
+  <%= f.hidden_field :comment_at, value: Time.zone.now %>
+  <%= f.text_field(:comment_content) %>
+  <%= f.submit t(".btn_comment") %>
+<% end %>

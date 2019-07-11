@@ -1,0 +1,18 @@
+<li>
+  <ul id = "comment-<%= @comment.id %>">
+    <p><%= @comment.user_name %>: <%= @comment.comment_content %></p>
+    <div class = "form-reply-comment" id = "list-reply-comment-<%= @comment.id %>">
+      <div>
+        <ul id = "reply-comment-<%= @comment.id %>">
+        </ul>
+      </div>
+      <%= form_for(@reply_comment, remote: true) do |f| %>
+        <%= f.hidden_field :tour_id, value: @tour.id %>
+        <%= f.hidden_field :reply_comment, value: @comment.id %>
+        <%= f.hidden_field :comment_at, value: Time.zone.now %>
+        <%= f.text_field(:comment_content) %>
+        <%= f.submit t(".btn_comment") %>
+      <% end %>
+    </div>
+  </ul>
+</li>

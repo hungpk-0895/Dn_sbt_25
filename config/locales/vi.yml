@@ -113,6 +113,13 @@ vi:
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
+  reviews:
+    create_comment:
+      btn_comment: "Trả lời"
+    comment:
+      btn_comment: "Trả lời"
+    load_tour:
+      not_found: "Không tìm thấy chuyến đi"
   shared:
     error_messages:
       form_error:
@@ -120,6 +127,10 @@ vi:
         other: "Biểu mẫu chứa %{count} lỗi"
     new_tours:
       book: "Đặt tour"
+    form_comment:
+      btn_comment: "Bình luận"
+    comments:
+      btn_comment: "Trả lời"
   static_pages:
     home:
       title: "Trang chủ"
