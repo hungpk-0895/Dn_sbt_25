@@ -1,0 +1,22 @@
+<div class = "form_padding">
+  <div class = "row">
+    <div class = "col-md-8 col-md-offset-4">
+      <p><%= t(".name") %>: <%= @tour.name %></p>
+      <p><%= t(".place") %>: <%= @tour.place %></p>
+      <% if params[:locale] == Settings.locale_en %>
+        <p><%= t(".price") %>: <%= number_to_currency @tour.price %></p>
+      <% else %>
+        <p><%= t(".price") %>: <%= number_to_currency change_en_to_vn(@tour.price) %></p>
+      <% end %>
+      <p><%= t(".start_time") %>: <%= l @tour.start_time, format: Settings.format_time %></p>
+      <p><%= t(".finisht_time") %>: <%= l @tour.finish_time, format: Settings.format_time %></p>
+      <p><%= t(".status") %>: <%= enum_l(@tour, :status ) %></p>
+      <p><%= t(".category") %>: <%= @tour.category.name %></p>
+      <% if @tour.picture? %>
+        <%= image_tag @tour.picture.url %>
+      <% else %>
+        <%= image_tag "/assets/default-image.jpg", size: Settings.size_img.tour %>
+      <% end %>
+    </div>
+  </div>
+</div>

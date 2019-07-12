@@ -1,0 +1,14 @@
+<tr>
+  <td><%= tour.name %></td>
+  <td><%= tour.place %></td>
+  <% if params[:locale] == Settings.locale_en %>
+    <td><%= number_to_currency tour.price %></td>
+  <% else %>
+    <td><%= number_to_currency change_en_to_vn(tour.price) %></td>
+  <% end %>
+  <td><%= l tour.start_time, format: Settings.format_time %></td>
+  <td><%= enum_l(tour, :status) %></td>
+  <td><%= link_to t(".btn_detail"), admin_tour_path(tour) %></td>
+  <td><%= link_to t(".btn_edit"), edit_admin_tour_path(tour)%></td>
+  <td><%= link_to t(".btn_delete"), admin_tour_path(tour), method: :delete, data: {confirm: t(".confirm")} %></td>
+</tr>

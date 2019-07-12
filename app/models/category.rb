@@ -8,4 +8,5 @@ class Category < ApplicationRecord
 
   scope :parent_cats, ->{where(parent_id: 0)}
   scope :sub_cats, ->(id_cat){where(parent_id: id_cat)}
+  scope :sub_categories, ->{where("parent_id > 0")}
 end

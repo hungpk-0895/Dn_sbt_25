@@ -47,6 +47,55 @@ en:
       create:
         success: "Create success"
         fail: "Create fail"
+    tours:
+      create:
+        success: "Create tour success"
+      destroy:
+        success: "Destroy tour success"
+        fail: "Destroy tour error"
+      edit:
+        title: "Edit tour"
+        btn_edit: "Save changes"
+        btn_cancel: "Cancel"
+      index:
+        title: "Manager Tours"
+        name: "Name tour"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        status: "Status"
+        btn_create: "Create tour"
+      form:
+        name: "Name Tour"
+        description: "Description"
+        place: "Place"
+        picture: "Picture"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        detail: "Detail"
+        price: "Price"
+        status: "Status"
+        category: "Category"
+        btn_cancel: "Cancel"
+      new:
+        title: "Create new tour"
+        btn_create: "Create"
+        btn_cancel: "Cancel"
+      show:
+        name: "Name"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        status: "Status"
+        category: "Category"
+      tour:
+        btn_detail: "Detail"
+        btn_edit: "Edit"
+        btn_delete: "Delete"
+        confirm: "You sure?"
+      update:
+        success: "Update tour success"
     users:
       index:
         username: "Username"
@@ -198,3 +247,10 @@ en:
           format: "%n %u"
           precision: 2
           unit: "$"
+  activerecord:
+    enums:
+      tour:
+        statuses:
+          openning: "Openning"
+          full: "Full"
+          finished: "Finished"

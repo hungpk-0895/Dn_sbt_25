@@ -17,3 +17,5 @@ limit_page:
   booking: 10
 format_time: "%-d/%-m/%y: %H:%M"
 locale_en: "en"
+size_img:
+  tour: "400x400"

@@ -45,6 +45,54 @@ vi:
       create:
         success: "Tạo danh mục thành công"
         fail: "Tạo danh mục thất bại"
+    tours:
+      create:
+        success: "Tạo tour thành công"
+      destroy:
+        success: "Xóa tour thành công"
+        fail: "Xóa tour thất bại"
+      edit:
+        title: "Chỉnh sửa tour"
+        btn_edit: "Lưu thay đổi"
+      index:
+        title: "Quản lí tours"
+        name: "Tên tour"
+        place: "Địa điểm"
+        price: "Giá"
+        start_time: "Thời gian bắt đầu"
+        status: "Trạng thái"
+        btn_create: "Tạo tour"
+      form:
+        name: "Tên Tour"
+        description: "Mô tả"
+        place: "Địa điểm"
+        picture: "Hình ảnh"
+        start_time: "Thời gian bắt đầu"
+        finish_time: "Thời gian kết thúc"
+        detail: "Chi tiết"
+        price: "Giá"
+        status: "Trạng thái"
+        category: "Danh mục"
+        btn_cancel: "Hủy"
+      new:
+        title: "Tạo tour mới"
+        btn_create: "Tạo"
+        btn_cancel: "Hủy"
+      show:
+        name: "Tên tour"
+        place: "Địa điểm"
+        price: "Giá"
+        start_time: "Thời gian bắt đầu"
+        finish_time: "Thời gian kết thúc"
+        status: "Trạng thái"
+        category: "Danh mục"
+      tour:
+        btn_detail: "Xem"
+        btn_edit: "Sửa"
+        btn_delete: "Xóa"
+        confirm: "Bạn chắc không?"
+      update:
+        success: "Thay đổi thành công"
     users:
       index:
         username: "Tên người dùng"
@@ -196,9 +244,10 @@ vi:
           format: "%n %u"
           precision: 0
           unit: "đồng"
-    human:
-      format:
-        significant: false
-        integers:
-          thousand: "Nghìn 12"
-          bilion: "tỷ"
+  activerecord:
+    enums:
+      tour:
+        statuses:
+          openning: "Đang mở"
+          full: "Hết chỗ"
+          finished: "Đã kết thúc"

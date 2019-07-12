@@ -1,0 +1,44 @@
+<%= form_for [:admin, @tour] do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+
+  <%= f.label :name, t(".name") %>
+  <%= f.text_field :name, class: "form-control" %>
+
+  <%= f.label :description, t(".description") %>
+  <%= f.text_field :description, class: "form-control" %>
+
+  <%= f.label :place, t(".place") %>
+  <%= f.text_field :place, class: "form-control" %>
+
+  <%= f.label :picture, t(".picture") %>
+  <% if @tour.picture? %>
+    <%= image_tag @tour.picture.url, id: "img", size:"200x200" %>
+  <% else %>
+    <%= image_tag "/assets/default-image.jpg", id: "img", size:"200x200" %>
+  <% end %>
+
+  <%= f.file_field :picture, accept: "image/jpeg, image/gif, image/png" %>
+
+  <%= f.label :start_time, t(".start_time") %>
+  <%= f.date_field :start_time, class: "form-control" %>
+
+  <%= f.label :finish_time, t(".finish_time") %>
+  <%= f.date_field :finish_time, class: "form-control" %>
+
+  <%= f.label :detail, t(".detail") %>
+  <%= f.text_field :detail, class: "form-control" %>
+
+  <%= f.label :price, t(".price") %>
+  <%= f.text_field :price, class: "form-control" %>
+
+  <%= f.label :status, t(".status") %>
+  <%= f.select :status, options_for_select(enum_options_for_select(Tour, :status), @tour.status), class: "form-control" %>
+
+  <%= f.label :category_id, t(".category") %>
+  <%= f.collection_select :category_id, @categories, :id, :name, class: "form-control" %>
+
+  <%= f.submit yield(:btn_text), class: "btn btn-primary" %>
+<% end %>
+  <%= link_to t(".btn_cancel"), admin_tours_path, class: "btn" %>
+
+<%= javascript_include_tag "showimage.js" %>
