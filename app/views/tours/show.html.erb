@@ -1,0 +1,37 @@
+<div class="news">
+  <div class="container">
+    <div class="row">
+
+      <!-- News Posts -->
+      <div class="col-lg-9">
+        <div class="news_posts">
+          <!-- News Post -->
+          <div class = "form_padding">
+            <div class="news_post">
+              <div class="post_title"><%= link_to @tour.name ,tour_url %></div>
+              <div class="post_meta">
+                <ul>
+                  <li><%= l @tour.created_at, format: Settings.format_time %></li>
+                </ul>
+              </div>
+              <div class="post_image">
+                <img src="/assets/news_1.jpg" alt="https://unsplash.com/@simonmigaj">
+                <a href="#"><div class="post_image_box text-center"><%= t ".book" %></div></a>
+              </div>
+              <div class="post_text">
+                <p><%= @tour.description %></p>
+              </div>
+              <div class="post_text">
+                <p><%= @tour.detail %></p>
+              </div>
+              <div class="post_text">
+                <p><%= t ".price" %>: <%= @tour.price %></p>
+              </div>
+            </div>
+          </div>
+          <!--/News Post -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

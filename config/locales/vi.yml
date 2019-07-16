@@ -3,7 +3,7 @@ vi:
     categories:
       load_parent_cat:
         not_found_parent: "Không tìm thấy danh mục cha"
-      load_categoires:
+      load_category:
         not_found_categories: "Không tìm thấy danh mục"
       index:
         title: "Danh mục"
@@ -116,12 +116,9 @@ vi:
       success: "Cập nhật thành công"
   helpers:
     base_title: "Du lịch"
-  user_mailer:
-    activate:
-      subject:
-        "Kích hoạt tài khoản"
-    account_activation:
-      txtWelcome: "Chào mừng đến với trang đặt vé du lịch"
-      txtHi: "Chào"
-      content: "Bấm vào đường dẫn phía dưới để kích hoạt tài khoản của bạn"
-      link: "Kích hoạt"
+  tours:
+    find_tour:
+      not_found: "Không tìm thấy chuyến du lịch"
+    show:
+      book: "Đặt"
+      price: "Giá"

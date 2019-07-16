@@ -12,7 +12,7 @@ class Admin::CategoriesController < ApplicationController
 
   def create
     @category = Category.new category_params
-    @category.parent_id = 0 if @category.parent_id.nil?
+    @category.parent_id ||= 0
     if @category.save
       flash[:success] = t ".success"
       redirect_to admin_categories_path
