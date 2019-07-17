@@ -1,0 +1,10 @@
+Booking tour notification
+Hi <%= @user.name %>,
+You just booking tour: <%= @tour.name %>
+
+    Start time: <%= l(@tour.start_time, format: Settings.format_time) %>
+    Finish time: <%= l(@tour.finish_time, format: Settings.format_time) %>
+    At: <%= @tour.place %>
+    Price: <%= @tour.price %>
+
+Thank you!

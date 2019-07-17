@@ -1,0 +1,11 @@
+<% @top_views.each do |top_view| %>
+  <div class="popular_item">
+    <%= link_to tour_url(top_view) do %>
+      <img src="/assets/popular_1.jpg" alt="image by Egzon Bytyqi">
+      <div class="popular_item_content">
+        <div class="popular_item_price">From $<%= top_view.price %></div>
+        <div class="popular_item_title"><%= top_view.place %></div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

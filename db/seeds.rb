@@ -174,3 +174,7 @@ end
                   user_id: user_id,
                   tour_id: tour_id)
 end
+
+10.times do |n|
+   Payment.create!(name: Faker::Name.name)
+end
