@@ -14,4 +14,5 @@ limit_page:
   news: 3
   top_rates: 4
   top_views: 8
+  booking: 10
 format_time: "%-d/%-m/%y: %H:%M"

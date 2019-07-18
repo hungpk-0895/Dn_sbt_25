@@ -41,11 +41,27 @@ vi:
     create:
       pending: "Yêu cầu đặt tour của bạn đang được xử lí."
       error: "Có lỗi xảy ra. Vui lòng thử lại sau."
+    booking:
+      btn_cancel: "Hủy"
+      confirm: "Bạn chắc chắn?"
     load_tour:
       not_found: "Không tìm thấy tour"
     new:
       btn_confirm: "Xác nhận"
       require_login: "Vui lòng đăng nhập"
+    destroy:
+      success: "Hủy thành công"
+      fail: "Hủy thất bại"
+      error: "Bạn không thể hủy chuyến này"
+    index:
+      title: "Các chuyến đi đã đặt"
+      name: "Tên chuyến đi"
+      place: "Địa điểm"
+      price: "Giá"
+      start_time: "Thời gian bắt đầu"
+      finish_time: "Thời gian kết thúc"
+      status: "Trạng thái"
+      created_at: "Đặt lúc"
   booking_mailer:
     notification:
       subject: "Thông báo đặt tour du lịch"
@@ -136,3 +152,9 @@ vi:
     show:
       book: "Đặt"
       price: "Giá"
+  number:
+    currency:
+      format:
+          format: "%n %u"
+          precision: 0
+          unit: "đồng"

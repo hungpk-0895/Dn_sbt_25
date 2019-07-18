@@ -3,7 +3,7 @@
     <div class="post_title"><%= link_to new_tour.name ,tour_url(new_tour) %></div>
     <div class="post_meta">
       <ul>
-        <li><%= new_tour.created_at.strftime(Settings.format_time) %></li>
+        <li><%= l new_tour.created_at, format: Settings.format_time %></li>
       </ul>
     </div>
     <div class="post_image">
