@@ -55,4 +55,13 @@ RSpec.describe User, type: :model do
         I18n.t "activerecord.errors.models.user.email.invalid")
     end
   end
+
+  describe "stub user" do
+    it "correct data test" do
+      user = double(:user)
+
+      allow(user).to receive(:name).and_return("Name of user")
+      expect(user.name).to eq("Name of user")
+    end
+  end
 end
