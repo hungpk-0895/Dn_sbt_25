@@ -1,0 +1,26 @@
+<% provide(:title, t(".title")) %>
+<div class = "form_padding">
+  <div class = "row">
+    <div class = "col-md-10 col-md-offset-1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th><%= t(".username") %></th>
+            <th><%= t(".email") %></th>
+            <th><%= t(".name") %></th>
+            <th><%= t(".place") %></th>
+            <th><%= t(".price") %></th>
+            <th><%= t(".start_time") %></th>
+            <th><%= t(".finish_time") %></th>
+            <th><%= t(".status") %></th>
+            <th><%= t(".created_at") %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render @bookings %>
+        </tbody>
+      </table>
+      <%= will_paginate @bookings %>
+    </div>
+  </div>
+</div>

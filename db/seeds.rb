@@ -57,6 +57,7 @@ end
                 count_views: count_views,
                 start_time: start_time,
                 finish_time: finish_time,
+                max_slot: 10,
                 category_id: 6)
 end
 
@@ -81,6 +82,7 @@ end
                 count_views: count_views,
                 start_time: start_time,
                 finish_time: finish_time,
+                max_slot: 10,
                 category_id: 7)
 end
 
@@ -105,6 +107,7 @@ end
                 count_views: count_views,
                 start_time: start_time,
                 finish_time: finish_time,
+                max_slot: 10,
                 category_id: 8)
 end
 
@@ -129,6 +132,7 @@ end
                 count_views: count_views,
                 start_time: start_time,
                 finish_time: finish_time,
+                max_slot: 10,
                 category_id: 9)
 end
 
@@ -153,6 +157,7 @@ end
                 count_views: count_views,
                 start_time: start_time,
                 finish_time: finish_time,
+                max_slot: 10,
                 category_id: 10)
 end
 

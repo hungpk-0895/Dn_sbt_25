@@ -16,3 +16,4 @@ limit_page:
   top_views: 8
   booking: 10
 format_time: "%-d/%-m/%y: %H:%M"
+locale_en: "en"

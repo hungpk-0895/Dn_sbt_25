@@ -1,5 +1,33 @@
 en:
   admin:
+    bookings:
+      index:
+        title: "Manager booking tours"
+        username: "Username"
+        email: "Email"
+        name: "Name tour"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        status: "Status"
+        created_at: "Booking at"
+      accept_booking:
+        success: "Update Success"
+        fail: "Something errors"
+        not_found: "Not found booking"
+      booking:
+        btn_accept: "Accept"
+        btn_reject: "Reject"
+        btn_delete: "Delete"
+      reject_booking:
+        success: "Update Success"
+        fail: "Something errors"
+        not_found: "Not found booking"
+      destroy:
+        success: "Deleted booking tour"
+        fail: "Something errors"
+        not_found: "Not found booking"
     categories:
       load_parent_cat:
         not_found_parent: "Not found parent categories"
@@ -83,6 +111,7 @@ en:
       menu_account: "Account"
       txtUsers: "Manager Users"
       txtCategory: "Manager Category"
+      txtManagerBooking: "Manager Booking"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"

@@ -1,5 +1,31 @@
 vi:
   admin:
+    bookings:
+      index:
+        title: "Quản lí đặt tour"
+        username: "Tên người dùng"
+        email: "Email"
+        name: "Tên tour"
+        place: "Địa điểm"
+        price: "Giá"
+        start_time: "Thời gian bắt đầu"
+        finish_time: "Thời gian kết thúc"
+        status: "Trạng thái"
+        created_at: "Đặt tour lúc"
+      accept_booking:
+        success: "Cập nhật thành công"
+        not_found: "Không tìm thấy chuyến đi được đặt"
+      booking:
+        btn_accept: "Chấp nhận"
+        btn_reject: "Từ chối"
+        btn_delete: "Xóa"
+      reject_booking:
+        success: "Cập nhật thành công"
+        not_found: "Không tìm thấy chuyến đi được đặt"
+      destroy:
+        success: "Đã xóa đặt tour"
+        fail: "Có lỗi xảy ra, vui lòng thử lại"
+        not_found: "Không tìm thấy chuyến đi được đặt"
     categories:
       load_parent_cat:
         not_found_parent: "Không tìm thấy danh mục cha"
@@ -83,6 +109,7 @@ vi:
       menu_account: "Tài khoản"
       txtUsers: "Quản lí tài khoản"
       txtCategory: "Quản lí danh mục"
+      txtManagerBooking: "Quản lí đặt tour"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
@@ -158,3 +185,9 @@ vi:
           format: "%n %u"
           precision: 0
           unit: "đồng"
+    human:
+      format:
+        significant: false
+        integers:
+          thousand: "Nghìn 12"
+          bilion: "tỷ"

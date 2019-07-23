@@ -1,7 +1,7 @@
 class Admin::UsersController < ApplicationController
   before_action :logged_in_user
   before_action :admin_user
-  before_action :load_user, only: :index
+  before_action :load_users, only: :index
   before_action :find_user, only: :destroy
 
   def index; end
