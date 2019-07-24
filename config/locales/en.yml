@@ -115,6 +115,13 @@ en:
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
+  reviews:
+    create_comment:
+      btn_comment: "Reply"
+    comment:
+      btn_comment: "Reply"
+    load_tour:
+      not_found: "Not found this tour"
   shared:
     error_messages:
       form_error:
@@ -122,6 +129,10 @@ en:
         other: "This form contains %{count} errors"
     new_tours:
       book: "Book"
+    form_comment:
+      btn_comment: "Comment"
+    comments:
+      btn_comment: "Reply"
   static_pages:
     home:
       title: "Home"

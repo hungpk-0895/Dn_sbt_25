@@ -24,5 +24,6 @@ Rails.application.routes.draw do
     resources :tours, only: %i(index show)
     resources :bookings
     resources :notifications
+    resources :reviews, only: :create
   end
 end
