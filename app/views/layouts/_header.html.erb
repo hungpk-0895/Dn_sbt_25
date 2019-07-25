@@ -34,6 +34,7 @@
                       <li><%= link_to t(".txtBooking"), bookings_path %>
                     <% end %>
                     <% if current_user.admin? %>
+                      <li><%= link_to t(".txtManagerTours"), admin_tours_path %>
                       <li><%= link_to t(".txtManagerBooking"), admin_bookings_path %>
                       <li><%= link_to t(".txtUsers"), admin_users_path %>
                       <li><%= link_to t(".txtCategory"), admin_categories_path %>

@@ -1,11 +1,13 @@
-<% @top_views.each do |top_view| %>
-  <div class="popular_item">
-    <%= link_to tour_url(top_view) do %>
-      <img src="/assets/popular_1.jpg" alt="image by Egzon Bytyqi">
-      <div class="popular_item_content">
-        <div class="popular_item_price">From $<%= top_view.price %></div>
-        <div class="popular_item_title"><%= top_view.place %></div>
+<div class="popular_item">
+  <%= link_to tour_url(top_view) do %>
+    <%= image_tag top_view.picture.url, size: Settings.size_img.home %>
+    <div class="popular_item_content">
+      <div class="popular_item_price">
+        <p><%= t(".price") %>: <%= number_to_currency currency(top_view.price) %></p>
       </div>
-    <% end %>
-  </div>
-<% end %>
+      <div class="popular_item_title">
+        <%= t(".place") %><%= top_view.place %>
+      </div>
+    </div>
+  <% end %>
+</div>

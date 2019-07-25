@@ -47,6 +47,55 @@ en:
       create:
         success: "Create success"
         fail: "Create fail"
+    tours:
+      create:
+        success: "Create tour success"
+      destroy:
+        success: "Destroy tour success"
+        fail: "Destroy tour error"
+      edit:
+        title: "Edit tour"
+        btn_edit: "Save changes"
+        btn_cancel: "Cancel"
+      index:
+        title: "Manager Tours"
+        name: "Name tour"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        status: "Status"
+        btn_create: "Create tour"
+      form:
+        name: "Name Tour"
+        description: "Description"
+        place: "Place"
+        picture: "Picture"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        detail: "Detail"
+        price: "Price"
+        status: "Status"
+        category: "Category"
+        btn_cancel: "Cancel"
+      new:
+        title: "Create new tour"
+        btn_create: "Create"
+        btn_cancel: "Cancel"
+      show:
+        name: "Name"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        status: "Status"
+        category: "Category"
+      tour:
+        btn_detail: "Detail"
+        btn_edit: "Edit"
+        btn_delete: "Delete"
+        confirm: "You sure?"
+      update:
+        success: "Update tour success"
     users:
       index:
         username: "Username"
@@ -75,7 +124,9 @@ en:
     load_tour:
       not_found: "Not found tour"
     new:
+      title: "Detail booking tour"
       btn_confirm: "Confirm"
+      not_found: "Not found tour"
       require_login: "You must login"
     destroy:
       success: "Cancel tour success"
@@ -112,6 +163,7 @@ en:
       txtUsers: "Manager Users"
       txtCategory: "Manager Category"
       txtManagerBooking: "Manager Booking"
+      txtManagerTours: "Manager Tours"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
@@ -133,6 +185,10 @@ en:
       btn_comment: "Comment"
     comments:
       btn_comment: "Reply"
+    top_rate:
+      price: "Price"
+    top_view:
+      price: "Price"
   static_pages:
     home:
       title: "Home"
@@ -190,11 +246,25 @@ en:
     find_tour:
       not_found: "Not found tour"
     show:
+      title: "Detail tour"
       book: "Book"
+      comment: "Comments"
+      detail: "Detail"
+      description: "Description"
+      place: "Place"
       price: "Price"
+      start_time: "Start time"
+      finish_time: "Finish time"
   number:
     currency:
       format:
           format: "%n %u"
           precision: 2
           unit: "$"
+  activerecord:
+    enums:
+      tour:
+        statuses:
+          openning: "Openning"
+          full: "Full"
+          finished: "Finished"
