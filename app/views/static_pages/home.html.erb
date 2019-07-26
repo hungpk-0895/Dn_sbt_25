@@ -68,20 +68,7 @@
     </div>
     <!--TOP RATED -->
     <div class="row top_content">
-      <% @top_rates.each do |top_rate| %>
-        <div class="col-lg-3 col-md-6 top_col">
-          <div class="top_item">
-            <%= link_to tour_url(top_rate) do %>
-              <div class="top_item_image"><%= image_tag "/assets/top_1.jpg" %></div>
-              <div class="top_item_content">
-                <div><%= top_rate.score %></div>
-                <div class="top_item_price">$<%= top_rate.price %></div>
-                <div class="top_item_text"><%= top_rate.place %></div>
-              </div>
-            <% end %>
-          </div>
-        </div>
-      <% end %>
+      <%= render partial: "shared/top_rate", collection: @top_rates %>
     </div>
     <!--/ TOP RATED -->
   </div>
@@ -99,17 +86,7 @@
       <div class="col">
         <div class="popular_content d-flex flex-md-row flex-column flex-wrap align-items-md-center align-items-start justify-content-md-between justify-content-start">
         <!-- Top view -->
-        <% @top_views.each do |top_view| %>
-          <div class="popular_item">
-            <%= link_to tour_url(top_view) do %>
-              <img src="/assets/popular_1.jpg" alt="image by Egzon Bytyqi">
-              <div class="popular_item_content">
-                <div class="popular_item_price">From $<%= top_view.price %></div>
-                <div class="popular_item_title"><%= top_view.place %></div>
-              </div>
-            <% end %>
-          </div>
-        <% end %>
+         <%= render partial: "shared/top_view", collection: @top_views %>
         <!-- /Top view -->
         </div>
       </div>

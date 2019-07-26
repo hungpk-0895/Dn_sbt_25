@@ -1,11 +1,7 @@
 <tr>
   <td><%= tour.name %></td>
   <td><%= tour.place %></td>
-  <% if params[:locale] == Settings.locale_en %>
-    <td><%= number_to_currency tour.price %></td>
-  <% else %>
-    <td><%= number_to_currency change_en_to_vn(tour.price) %></td>
-  <% end %>
+  <td><%= number_to_currency currency(tour.price) %></td>
   <td><%= l tour.start_time, format: Settings.format_time %></td>
   <td><%= enum_l(tour, :status) %></td>
   <td><%= link_to t(".btn_detail"), admin_tour_path(tour) %></td>

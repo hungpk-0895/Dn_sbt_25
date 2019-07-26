@@ -5,11 +5,12 @@ module Enum18nHelper
     end
   end
 
-  def enum_l(model, enum)
+  def enum_l model, enum
     enum_i18n(model.class, enum, model.send(enum))
   end
 
-  def enum_i18n(class_name, enum, key)
-    I18n.t("activerecord.enums.#{class_name.model_name.i18n_key}.#{enum.to_s.pluralize}.#{key}")
+  def enum_i18n class_name, enum, key
+    i18n_key = class_name.model_name.i18n_key
+    I18n.t "activerecord.enums.#{i18n_key}.#{enum.to_s.pluralize}.#{key}"
   end
 end

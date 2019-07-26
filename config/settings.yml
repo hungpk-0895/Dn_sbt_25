@@ -18,4 +18,7 @@ limit_page:
 format_time: "%-d/%-m/%y: %H:%M"
 locale_en: "en"
 size_img:
+  small: "200x200"
   tour: "400x400"
+  home: "262x200"
+  news_tour: "850x400"

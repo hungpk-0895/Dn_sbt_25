@@ -124,7 +124,9 @@ en:
     load_tour:
       not_found: "Not found tour"
     new:
+      title: "Detail booking tour"
       btn_confirm: "Confirm"
+      not_found: "Not found tour"
       require_login: "You must login"
     destroy:
       success: "Cancel tour success"
@@ -161,6 +163,7 @@ en:
       txtUsers: "Manager Users"
       txtCategory: "Manager Category"
       txtManagerBooking: "Manager Booking"
+      txtManagerTours: "Manager Tours"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
@@ -182,6 +185,10 @@ en:
       btn_comment: "Comment"
     comments:
       btn_comment: "Reply"
+    top_rate:
+      price: "Price"
+    top_view:
+      price: "Price"
   static_pages:
     home:
       title: "Home"
@@ -239,8 +246,15 @@ en:
     find_tour:
       not_found: "Not found tour"
     show:
+      title: "Detail tour"
       book: "Book"
+      comment: "Comments"
+      detail: "Detail"
+      description: "Description"
+      place: "Place"
       price: "Price"
+      start_time: "Start time"
+      finish_time: "Finish time"
   number:
     currency:
       format:

@@ -11,11 +11,7 @@
   <%= f.text_field :place, class: "form-control" %>
 
   <%= f.label :picture, t(".picture") %>
-  <% if @tour.picture? %>
-    <%= image_tag @tour.picture.url, id: "img", size:"200x200" %>
-  <% else %>
-    <%= image_tag "/assets/default-image.jpg", id: "img", size:"200x200" %>
-  <% end %>
+  <%= image_tag @tour.picture.url, id: "img", size: Settings.size_img.small %>
 
   <%= f.file_field :picture, accept: "image/jpeg, image/gif, image/png" %>
 

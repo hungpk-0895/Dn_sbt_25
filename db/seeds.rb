@@ -39,7 +39,6 @@ end
 10.times do |n|
    name = Faker::Football.player
    description = Faker::Lorem.paragraph(sentence_count = 3)
-   picture = Faker::Avatar.image
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city
    price = Faker::Number.between(from = 100, to = 1000)
@@ -49,7 +48,6 @@ end
    finish_time = 20.days.from_now
    Tour.create!(name: name,
                 description: description,
-                picture: picture,
                 detail: detail,
                 place: place,
                 price: price,
@@ -64,7 +62,6 @@ end
 10.times do |n|
    name = Faker::Football.player
    description = Faker::Lorem.paragraph(sentence_count = 3)
-   picture = Faker::Avatar.image
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city
    price = Faker::Number.between(from = 100, to = 1000)
@@ -74,7 +71,6 @@ end
    finish_time = 20.days.from_now
    Tour.create!(name: name,
                 description: description,
-                picture: picture,
                 detail: detail,
                 place: place,
                 price: price,
@@ -89,7 +85,6 @@ end
 10.times do |n|
    name = Faker::Football.player
    description = Faker::Lorem.paragraph(sentence_count = 3)
-   picture = Faker::Avatar.image
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city
    price = Faker::Number.between(from = 100, to = 1000)
@@ -99,7 +94,6 @@ end
    finish_time = 20.days.from_now
    Tour.create!(name: name,
                 description: description,
-                picture: picture,
                 detail: detail,
                 place: place,
                 price: price,
@@ -114,7 +108,6 @@ end
 10.times do |n|
    name = Faker::Football.player
    description = Faker::Lorem.paragraph(sentence_count = 3)
-   picture = Faker::Avatar.image
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city
    price = Faker::Number.between(from = 100, to = 1000)
@@ -124,7 +117,6 @@ end
    finish_time = 20.days.from_now
    Tour.create!(name: name,
                 description: description,
-                picture: picture,
                 detail: detail,
                 place: place,
                 price: price,
@@ -139,7 +131,6 @@ end
 10.times do |n|
    name = Faker::Football.player
    description = Faker::Lorem.paragraph(sentence_count = 3)
-   picture = Faker::Avatar.image
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city
    price = Faker::Number.between(from = 100, to = 1000)
@@ -149,7 +140,6 @@ end
    finish_time = 20.days.from_now
    Tour.create!(name: name,
                 description: description,
-                picture: picture,
                 detail: detail,
                 place: place,
                 price: price,

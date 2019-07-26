@@ -15,4 +15,12 @@ class PictureUploader < CarrierWave::Uploader::Base
   def extension_whitelist
     %w(jpg jpeg gif png)
   end
+
+  def default_url *_args
+    # For Rails 3.1+ asset pipeline compatibility:
+    # ActionController::Base.helpers.asset_path("fallback/"
+    # + [version_name, "default.png"].compact.join('_'))
+
+    "/assets/fallback/" + [version_name, "default.jpg"].compact.join("_")
+  end
 end
