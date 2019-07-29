@@ -4,7 +4,9 @@
   <h1><%= t(".title") %></h1>
   <div class = "row">
     <div class = "col-md-6 col-md-offset-3">
-      <%= render "form" %>
+      <%= form_for [:admin, @tour], url: {action: :create} do |form|%>
+        <%= render partial: "form", locals: {f: form} %>
+      <% end %>
     </div>
   </div>
 </div>
