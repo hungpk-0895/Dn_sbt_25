@@ -7,6 +7,7 @@ RSpec.describe Admin::ToursController, type: :controller do
   let(:admin) {FactoryBot.create :admin}
   let(:non_admin) {FactoryBot.create :user}
   let!(:category1) {FactoryBot.create :category1}
+  let!(:tours){Tour.new_tours}
   let(:tour) {FactoryBot.create :tour}
   let(:invalid_params){{name: ""}}
 
@@ -32,7 +33,13 @@ RSpec.describe Admin::ToursController, type: :controller do
         get :index
       end
 
-      it{expect(response).to render_template :index}
+      it "render to index" do
+        expect(response).to render_template :index
+      end
+
+      it "assign @tours" do
+        expect(assigns(:tours)).to eq(tours.to_a)
+      end
     end
   end
 
@@ -58,7 +65,7 @@ RSpec.describe Admin::ToursController, type: :controller do
         get :new
       end
 
-       it{expect(response).to render_template :new}
+      it{expect(response).to render_template :new}
     end
   end
 
