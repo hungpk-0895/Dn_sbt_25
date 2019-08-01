@@ -1,0 +1,50 @@
+vi:
+  devise:
+    confirmations:
+      new:
+        txtResend: "Gửi lại hướng dẫn xác thực"
+        btn_send: "Gửi lại"
+    mailer:
+      confirmation_instructions:
+        txtWelcome: "Chào mừng"
+        txtContent: "Bạn có thể xác nhận tài khoản email thông qua đường dẫn phía dưới:"
+        txtConfirm: "Xác thực tài khoản"
+      email_changed:
+        txtHello: "Xin chào"
+        txtUnconfirm: "Chúng tôi đang liên hệ với bạn để thông báo cho bạn rằng email của bạn đang được thay đổi thành "
+        txtConfirm: "Chúng tôi đang liên hệ với bạn để thông báo cho bạn rằng email của bạn đã được thay đổi thành "
+      password_change:
+        txtHello: "Xin chào"
+        txtContent: "Chúng tôi đang liên hệ với bạn để thông báo cho bạn rằng mật khẩu của bạn đã bị thay đổi."
+      reset_password_instructions:
+        txtHello: "Xin chào"
+        txtNotice: "Ai đó đã yêu cầu một liên kết để thay đổi mật khẩu của bạn. Bạn có thể làm điều này thông qua liên kết dưới đây."
+        btn_change: "Thay đổi mật khẩu"
+        content_html: "<p>Nếu bạn không yêu cầu điều này, xin vui lòng bỏ qua email này.</p>
+                      <p>Mật khẩu của bạn sẽ không thay đổi cho đến khi bạn truy cập vào liên kết ở trên và tạo một mật khẩu mới.</p>"
+    passwords:
+      edit:
+        txtChange: "Đổi mật khẩu"
+        btn_change: "Đổi mật khẩu"
+      new:
+        txtForgot: "Quên mật khẩu?"
+        btn_send: "Gửi hướng dẫn lấy lại mật khẩu"
+    registrations:
+      edit:
+        txtEdit: "Chỉnh sửa thông tin cá nhân"
+        txtWait: "Hiện đang chờ xác nhận cho:"
+        btn_submit: "Cập nhật"
+        txtCancel: "Hủy tài khoản"
+        btn_back: "Trở về"
+      new:
+        txtSignup: "Đăng kí"
+    sessions:
+      new:
+        txtLogin: "Đăng nhập"
+        remember_me: "lưu tài khoản"
+    shared:
+      links:
+        txtLogin: "Đăng nhập"
+        txtSignup: "Đăng kí"
+        txtForgot: "Quên mật khẩu?"
+        txtReceive: "Tài khoản chưa được xác nhận?"

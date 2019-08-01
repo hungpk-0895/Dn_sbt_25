@@ -4,14 +4,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :email
       t.string :phone
-      t.string :password_digest
-      t.string :remember_digest
-      t.boolean :admin
-      t.boolean :activated
-      t.string :reset_digest
-      t.datetime :reset_sent_at
+      t.integer :role, default: 0
 
-      t.timestamps
     end
   end
 end

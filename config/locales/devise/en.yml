@@ -1,0 +1,50 @@
+en:
+  devise:
+    confirmations:
+      new:
+        txtResend: "Resend confirmation instructions"
+        btn_send: "Resend"
+    mailer:
+      confirmation_instructions:
+        txtWelcome: "Welcome"
+        txtContent: "You can confirm your account email through the link below:"
+        txtConfirm: "Confirm my account"
+      email_changed:
+        txtHello: "Hello"
+        txtUnconfirm: "We're contacting you to notify you that your email is being changed to "
+        txtConfirm: "We're contacting you to notify you that your email has been changed to "
+      password_change:
+        txtHello: "Hello"
+        txtContent: "We're contacting you to notify you that your password has been changed."
+      reset_password_instructions:
+        txtHello: "Hello"
+        txtNotice: "Someone has requested a link to change your password. You can do this through the link below."
+        btn_change: "Change my password"
+        content_html: "<p>If you didn't request this, please ignore this email.</p>
+                      <p>Your password won't change until you access the link above and create a new one.</p>"
+    passwords:
+      edit:
+        txtChange: "Change your password"
+        btn_change: "Change my password"
+      new:
+        txtForgot: "Forgot your password?"
+        btn_send: "Send me reset password instructions"
+    registrations:
+      edit:
+        txtEdit: "Edit profile"
+        txtWait: "Currently waiting confirmation for:"
+        btn_submit: "Update"
+        txtCancel: "Cancel my account"
+        btn_back: "Back"
+      new:
+        txtSignup: "Sign up"
+    sessions:
+      new:
+        txtLogin: "Log in"
+        remember_me: "remember me"
+    shared:
+      links:
+        txtLogin: "Log in"
+        txtSignup: "Sign up"
+        txtForgot: "Forgot your password?"
+        txtReceive: "Didn't receive confirmation instructions?"

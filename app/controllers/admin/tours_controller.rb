@@ -1,5 +1,5 @@
 class Admin::ToursController < ApplicationController
-  before_action :logged_in_user
+  before_action :authenticate_user!
   before_action :admin_user
   before_action :load_tour, except: %i(index new create)
   before_action :load_sub_categories, only: %i(new create edit)
@@ -46,10 +46,6 @@ class Admin::ToursController < ApplicationController
   end
 
   private
-  def admin_user
-    redirect_to root_path unless current_user.admin?
-  end
-
   def load_tour
     @tour = Tour.find_by id: params[:id]
     return if @tour

@@ -1,0 +1,5 @@
+<p><%= t ".txtWelcome" %> <%= @email %>!</p>
+
+<p><%= t ".txtContent" %></p>
+
+<p><%= link_to t(".txtConfirm"), confirmation_url(@resource, confirmation_token: @token) %></p>
