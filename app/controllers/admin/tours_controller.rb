@@ -1,5 +1,5 @@
 class Admin::ToursController < ApplicationController
-  before_action :authenticate_user!
+  authorize_resource
   before_action :admin_user
   before_action :load_tour, except: %i(index new create)
   before_action :load_sub_categories, only: %i(new create edit)

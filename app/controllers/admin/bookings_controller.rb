@@ -1,5 +1,5 @@
 class Admin::BookingsController < ApplicationController
-  before_action :authenticate_user!
+  authorize_resource
   before_action :admin_user
   before_action :load_booking, except: %i(index)
 

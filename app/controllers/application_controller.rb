@@ -5,6 +5,16 @@ class ApplicationController < ActionController::Base
   before_action :config_permitted_parameters, if: :devise_controller?
   before_action :set_locale
 
+  rescue_from CanCan::AccessDenied do
+    if user_signed_in?
+      flash[:danger] = t "check.no_permission"
+      redirect_to root_path
+    else
+      flash[:danger] = t "check.require_login"
+      redirect_to new_user_session_url
+    end
+  end
+
   def default_url_options
     {locale: I18n.locale}
   end

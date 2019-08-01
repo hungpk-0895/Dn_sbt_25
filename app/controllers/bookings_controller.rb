@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-  before_action :authenticate_user!
+  authorize_resource
   before_action :load_booking, only: :destroy
   before_action :load_tour, only: :new
 

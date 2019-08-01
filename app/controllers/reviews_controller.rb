@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  before_action :authenticate_user!
+  authorize_resource
   before_action :load_tour
 
   def create
