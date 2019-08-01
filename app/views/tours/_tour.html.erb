@@ -6,8 +6,8 @@
     </ul>
   </div>
   <div class="post_image">
-    <img src="/assets/news_1.jpg" alt="https://unsplash.com/@simonmigaj">
-    <a href="#"><div class="post_image_box text-center"></div></a>
+    <%= image_tag tour.picture.url, size: Settings.size_img.news_tour %>
+    <%= link_to t(".book"), new_booking_path(tour_id: tour.id), class: "post_image_box text-center" %>
   </div>
   <div class="post_text">
     <p><%= tour.description %></p>

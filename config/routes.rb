@@ -8,11 +8,6 @@ Rails.application.routes.draw do
     get "/news", to: "static_pages#news"
     get "/offers", to: "static_pages#offers"
     get "/contact", to: "static_pages#contact"
-    get "/signup", to: "users#new"
-    post "/signup", to: "users#create"
-    get "/login", to: "sessions#new"
-    post "/login", to: "sessions#create"
-    delete "/logout", to: "sessions#destroy"
 
     namespace :admin do
       resources :users, only: %i(index destroy)
@@ -22,8 +17,9 @@ Rails.application.routes.draw do
       get "/booking/accept", to: "bookings#accept_booking"
       get "/booking/reject", to: "bookings#reject_booking"
     end
+    get "/search", to: "searchs#index"
     resources :users
-    resources :tours, only: %i(index show)
+    resources :tours, only: %i(show index)
     resources :bookings
     resources :notifications
     resources :reviews, only: :create

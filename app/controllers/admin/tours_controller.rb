@@ -5,7 +5,8 @@ class Admin::ToursController < ApplicationController
   before_action :load_sub_categories, only: %i(new create edit)
 
   def index
-    @tours = Tour.new_tours.paginate page: params[:page],
+    @q = Tour.search(params[:q])
+    @tours = @q.result.paginate page: params[:page],
       per_page: Settings.limit_page.booking
   end
 
@@ -30,7 +31,7 @@ class Admin::ToursController < ApplicationController
   def update
     if @tour.update_attributes tour_params
       flash[:success] = t ".success"
-      redirect_to admin_tour_path
+      redirect_to admin_tours_path
     else
       render :edit
     end

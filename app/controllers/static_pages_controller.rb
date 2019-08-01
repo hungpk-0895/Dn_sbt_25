@@ -2,6 +2,8 @@ class StaticPagesController < ApplicationController
   def home
     @top_rates = Tour.top_rates.limit Settings.limit_page.top_rates
     @top_views = Tour.top_views.limit Settings.limit_page.top_views
+    @categories = Category.sub_categories
+    @q = Tour.search(params[:q])
   end
 
   def about; end

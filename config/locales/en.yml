@@ -65,6 +65,7 @@ en:
         start_time: "Start time"
         status: "Status"
         btn_create: "Create tour"
+        notice: "Not found with keyword: "
       form:
         name: "Name Tour"
         description: "Description"
@@ -81,6 +82,8 @@ en:
         title: "Create new tour"
         btn_create: "Create"
         btn_cancel: "Cancel"
+      search:
+        search: "Search"
       show:
         name: "Name"
         place: "Place"
@@ -193,17 +196,18 @@ en:
     home:
       title: "Home"
       txtFind: "Find destination of your life"
-      txtDestination: "Destination"
-      txtAdventureType: "Adventure type"
-      txtMinPrice: "Min Price"
-      txtMaxPrice: "Max Price"
-      btnFind: "Find"
       txtTopRate: "Top Rating Destination"
       txtTopBooking: "Top Booking Destination"
     about:
       title: "About"
     news:
       title: "Hot"
+    search:
+      txtDestination: "Destination"
+      txtAdventureType: "Adventure type"
+      txtMinPrice: "Min Price"
+      txtMaxPrice: "Max Price"
+      btnFind: "Find"
   sessions:
     new:
       title: "Login"
@@ -237,7 +241,12 @@ en:
       success: "Update success"
   helpers:
     base_title: "Book Tour"
+  searchs:
+    index:
+      title: "Search place"
   tours:
+    index:
+      title: "Tours"
     find_tour:
       not_found: "Not found tour"
     show:

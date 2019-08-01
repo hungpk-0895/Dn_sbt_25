@@ -15,10 +15,10 @@
 <%= f.file_field :picture, accept: "image/jpeg, image/gif, image/png" %>
 
 <%= f.label :start_time, t(".start_time") %>
-<%= f.date_field :start_time, class: "form-control" %>
+<%= f.datetime_field :start_time, class: "form-control" %>
 
 <%= f.label :finish_time, t(".finish_time") %>
-<%= f.date_field :finish_time, class: "form-control" %>
+<%= f.datetime_field :finish_time, class: "form-control" %>
 
 <%= f.label :detail, t(".detail") %>
 <%= f.text_field :detail, class: "form-control" %>

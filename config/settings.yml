@@ -18,6 +18,7 @@ limit_page:
   top_rates: 4
   top_views: 8
   booking: 10
+  tour_search: 5
 format_time: "%-d/%-m/%y: %H:%M"
 locale_en: "en"
 size_img:
