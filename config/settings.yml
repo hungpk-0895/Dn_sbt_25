@@ -3,6 +3,9 @@ valid:
     max_length: 255
   name:
     max_length: 100
+  phone:
+    less_than: 12
+    greater_than: 9
   password:
     min_length: 6
   category:

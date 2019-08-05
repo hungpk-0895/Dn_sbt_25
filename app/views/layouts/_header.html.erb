@@ -23,7 +23,7 @@
               <li class="main_nav_item"><%= link_to t(".txtOffers"), offers_path %></li>
               <li class="main_nav_item"><%= link_to t(".txtNews"), news_path %></li>
               <li class="main_nav_item"><%= link_to t(".txtContact"), contact_path %></li>
-              <% if logged_in? %>
+              <% if user_signed_in? %>
                 <li class = "main_nav_item">
                   <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
                     <%= t(".menu_account") %><b class = "caret"></b>
@@ -40,10 +40,10 @@
                       <li><%= link_to t(".txtCategory"), admin_categories_path %>
                     <% end %>
                     <li class = "divider">
-                    <li><%= link_to t(".txtLogout"), logout_path, method: :delete %></li>
+                    <li><%= link_to t(".txtLogout"), destroy_user_session_path, method: :delete %></li>
                   </ul>
               <% else %>
-                <li class="main_nav_item"><%= link_to t(".txtLogin"), login_path %></li>
+                <li class="main_nav_item"><%= link_to t(".txtLogin"), new_user_session_path %></li>
               <% end %>
             </ul>
           </nav>

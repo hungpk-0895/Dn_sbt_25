@@ -1,0 +1,35 @@
+vi:
+  activerecord:
+    attributes:
+      user:
+        name: "Họ tên"
+        email: "Địa chỉ email"
+        phone: "Số điện thoại"
+        password: "Mật khẩu"
+        password_confirmation: "Nhập lại mật khẩu"
+        current_password: "Mật khẩu hiện tại"
+    enums:
+      tour:
+        statuses:
+          openning: "Đang mở"
+          full: "Hết chỗ"
+          finished: "Đã đóng"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "không được để trống"
+              too_long: "không được quá 100 kí tự"
+            email:
+              invalid: "không đúng định dạng"
+              too_long: "không được quá 255 kí tự"
+            phone:
+              not_a_number: "không đúng"
+            password:
+              blank: "không được để trống"
+              too_short: "ít nhất 6 kí tự"
+            password_confirmation:
+              invalid: "không trùng khớp"
+            current_password:
+              invalid: "không chính xác"

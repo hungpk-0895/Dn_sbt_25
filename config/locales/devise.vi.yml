@@ -1,0 +1,56 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+vi:
+  devise:
+    confirmations:
+      confirmed: "Địa chỉ email của bạn đã được xác nhận thành công."
+      send_instructions: "Bạn sẽ nhận được hướng dẫn xác thực email trong một ít phút tới."
+      send_paranoid_instructions: "Nếu địa chỉ email của bạn tồn tại trong cơ sở dữ liệu của chúng tôi, bạn sẽ nhận được email có hướng dẫn về cách xác nhận địa chỉ email của bạn trong vài phút."
+    failure:
+      already_authenticated: "Bạn đã đăng nhập."
+      inactive: "Tài khoản của bạn chưa được kích hoạt."
+      invalid: "%{authentication_keys} hoặc mật khẩu không hợp lệ ."
+      not_found_in_database: "%{authentication_keys} hoặc mật khẩu không hợp lệ."
+      timeout: "Phiên làm việc của bạn đã hết hạn, vui lòng đăng nhập lại để tiếp tục."
+      unauthenticated: "Bạn phải đăng nhập hoặc đăng kí để tiếp tục."
+      unconfirmed: "Bạn phải xác nhận địa chỉ email để tiếp tục."
+    mailer:
+      confirmation_instructions:
+        subject: "Hướng dẫn xác nhận"
+      reset_password_instructions:
+        subject: "Hướng dẫn tạo lại mật khẩu"
+      email_changed:
+        subject: "Email đã được thay đổi"
+      password_change:
+        subject: "Mật khẩu đã được thay đổi"
+    passwords:
+      no_token: "Bạn không thể truy cập trang này mà không đến từ email đặt lại mật khẩu. Nếu bạn đến từ một email đặt lại mật khẩu, vui lòng đảm bảo rằng bạn đã sử dụng URL đầy đủ được cung cấp."
+      send_instructions: "Bạn sẽ nhận được email có hướng dẫn về cách đặt lại mật khẩu trong vài phút."
+      send_paranoid_instructions: "Nếu địa chỉ email của bạn tồn tại trong cơ sở dữ liệu của chúng tôi, bạn sẽ nhận được liên kết khôi phục mật khẩu tại địa chỉ email của mình sau vài phút."
+      updated: "Mật khẩu của bạn đã được thay đổi thành công. Bây giờ bạn đã đăng nhập."
+      updated_not_active: "Mật khẩu của bạn đã được thay đổi thành công."
+    registrations:
+      destroyed: "Tài khoản của bạn đã bị hủy thành công. Mong rằng chúng tôi sẽ sớm gặp lại bạn."
+      signed_up: "Chào mừng bạn. Bạn đã đăng ký thành công."
+      signed_up_but_inactive: "Bạn đã đăng ký thành công. Tuy nhiên, chúng tôi không thể đăng nhập cho bạn vì tài khoản của bạn chưa được kích hoạt."
+      signed_up_but_unconfirmed: "Một tin nhắn với một liên kết xác nhận đã được gửi đến địa chỉ email của bạn. Vui lòng theo liên kết để kích hoạt tài khoản của bạn."
+      update_needs_confirmation: "Bạn đã cập nhật tài khoản thành công, nhưng chúng tôi cần xác minh địa chỉ email mới của bạn. Vui lòng kiểm tra email của bạn và theo liên kết xác nhận để xác nhận địa chỉ email mới của bạn."
+      updated: "Tài khoản của bạn đã được cập nhật thành công."
+      updated_but_not_signed_in: "Tài khoản của bạn đã được cập nhật thành công, nhưng vì mật khẩu của bạn đã được thay đổi, bạn cần đăng nhập lại."
+    sessions:
+      signed_in: "Đã đăng nhập thành công."
+      signed_out: "Đã đăng xuất thành công."
+      already_signed_out: "Đã đăng xuất thành công."
+    unlocks:
+      send_instructions: "Bạn sẽ nhận được email có hướng dẫn cách mở khóa tài khoản của bạn sau vài phút."
+      send_paranoid_instructions: "Nếu tài khoản của bạn tồn tại, bạn sẽ nhận được email có hướng dẫn cách mở khóa trong vài phút."
+      unlocked: "Tài khoản của bạn đã được mở khóa thành công. Vui lòng đăng nhập để tiếp tục."
+  errors:
+    messages:
+      already_confirmed: "đã được xác nhận, vui lòng thử đăng nhập."
+      confirmation_period_expired: "cần được xác nhận trong %{period}, vui lòng yêu cầu một cái mới"
+      expired: "đã hết hạn, vui lòng yêu cầu một cái mới"
+      not_found: "không tìm thấy"
+      not_saved:
+        one: "Có 1 lỗi xác thực dữ liệu xảy ra:"
+        other: "Có %{count} lỗi xác thực dữ liệu xảy ra:"

@@ -1,0 +1,35 @@
+en:
+  activerecord:
+    attributes:
+      user:
+        name: "Name"
+        email: "Email address"
+        phone: "Number phone"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        current_password: "Current password"
+    enums:
+      tour:
+        statuses:
+          openning: "Openning"
+          full: "Full"
+          finished: "Finished"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "can not be empty"
+              too_long: "can not over 100 characters"
+            email:
+              invalid: "is not email format"
+              too_long: "can not over 255 characters"
+            phone:
+              not_a_number: "must be number"
+            password:
+              blank: "can't be empty"
+              too_short: "greater than 5 characters"
+            password_confirmation:
+              invalid: "is incorrect"
+            current_password:
+              invalid: "is invalid"

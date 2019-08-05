@@ -12,7 +12,7 @@ User.create!(name:  "Admin",
              password_confirmation: "123456",
              role: 1)
 
-50.times do |n|
+10.times do |n|
   name = Faker::Name.name
   email = "user-#{n+1}@example.com"
   phone = "0987523#{n+1}"
@@ -156,7 +156,7 @@ end
    count_liked = Faker::Number.between(from = 1, to = 100)
    comment_content = Faker::Lorem.paragraph(sentence_count = 3)
    rating_score = Faker::Number.between(from = 1, to = 10)
-   user_id = Faker::Number.between(from = 2, to = 50)
+   user_id = Faker::Number.between(from = 2, to = 11)
    tour_id = Faker::Number.between(from = 1, to = 50)
    Review.create!(review_content: review_content,
                   review_at: Time.zone.now,

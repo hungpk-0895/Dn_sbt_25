@@ -1,5 +1,5 @@
 class Admin::BookingsController < ApplicationController
-  before_action :logged_in_user
+  before_action :authenticate_user!
   before_action :admin_user
   before_action :load_booking, except: %i(index)
 
@@ -50,10 +50,6 @@ class Admin::BookingsController < ApplicationController
   end
 
   private
-  def admin_user
-    redirect_to root_path unless current_user.admin?
-  end
-
   def load_booking
     booking_id = params[:id].present? ? params[:id] : params[:booking_id]
     @booking = Booking.find_by id: booking_id

@@ -261,10 +261,3 @@ en:
           format: "%n %u"
           precision: 2
           unit: "$"
-  activerecord:
-    enums:
-      tour:
-        statuses:
-          openning: "Openning"
-          full: "Full"
-          finished: "Finished"
