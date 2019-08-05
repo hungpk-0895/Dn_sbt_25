@@ -3,6 +3,8 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.1"
 
+gem "axlsx", "3.0.0.pre"
+gem "axlsx_rails", "0.5.2"
 gem "bcrypt", "3.1.12"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap-sass", ">= 3.0.0"
@@ -25,10 +27,12 @@ gem "rails", "~> 5.2.3"
 gem "rails-i18n"
 gem "ransack"
 gem "rubocop", "~> 0.54.0", require: false
+gem "rubyzip", "~> 1.2.3"
 gem "sass-rails", "~> 5.0"
 gem "turbolinks", "~> 5"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "uglifier", ">= 1.3.0"
+gem "zip-zip"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]

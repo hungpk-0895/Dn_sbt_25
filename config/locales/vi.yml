@@ -26,6 +26,17 @@ vi:
         success: "Đã xóa đặt tour"
         fail: "Có lỗi xảy ra, vui lòng thử lại"
         not_found: "Không tìm thấy chuyến đi được đặt"
+      export:
+        stt: "STT"
+        username: "Tên người đặt"
+        email: "Địa chỉ email"
+        name: "Tên chuyến đi"
+        place: "Địa điểm"
+        price: "Giá"
+        start_time: "Thời gian bắt đầu"
+        finish_time: "Thời gian kết thúc"
+        status: "Trạng thái"
+        created_at: "Đặt lúc"
     categories:
       load_parent_cat:
         not_found_parent: "Không tìm thấy danh mục cha"

@@ -14,6 +14,11 @@ vi:
           openning: "Đang mở"
           full: "Hết chỗ"
           finished: "Đã đóng"
+      booking:
+        statuses:
+          pending: "Đang xử lý"
+          accepted: "Đã chấp nhận"
+          rejected: "Bị từ chối"
     errors:
       models:
         user:

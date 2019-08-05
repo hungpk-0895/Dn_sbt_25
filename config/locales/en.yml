@@ -28,6 +28,17 @@ en:
         success: "Deleted booking tour"
         fail: "Something errors"
         not_found: "Not found booking"
+      export:
+        stt: "No."
+        username: "User name"
+        email: "Email address"
+        name: "Tour name"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        status: "Status"
+        created_at: "Book at"
     categories:
       load_parent_cat:
         not_found_parent: "Not found parent categories"

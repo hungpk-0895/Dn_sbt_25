@@ -13,7 +13,11 @@ Rails.application.routes.draw do
       resources :users, only: %i(index destroy)
       resources :categories
       resources :tours
-      resources :bookings, only: %i(index update destroy)
+      resources :bookings, only: %i(index update destroy) do
+        collection do
+          get :export
+        end
+      end
       get "/booking/accept", to: "bookings#accept_booking"
       get "/booking/reject", to: "bookings#reject_booking"
     end
