@@ -4,11 +4,16 @@
   <div class="container">
     <div class="row">
       <!-- News Posts -->
-      <div class="col-lg-9">
+      <div class="col-lg-12">
         <div class="news_posts">
           <!-- News Post -->
           <div class = "form_padding">
-            <%= render "form_booking" %>
+            <div class = "form-booking">
+              <%= render "form_booking" %>
+            </div>
+            <div class = "image-tour">
+              <%= image_tag @tour.picture.url, size: Settings.size_img.tour_booking %>
+            </div>
           </div>
         </div>
       </div>

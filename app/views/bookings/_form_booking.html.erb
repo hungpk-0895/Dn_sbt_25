@@ -1,10 +1,8 @@
 <div class="post_text">
-  <p><%= t(".name") %>:<%= current_user.name %></p>
-  <p><%= t(".email") %>:<%= current_user.email %></p>
-  <p><%= t(".phone") %>:<%= current_user.phone %></p>
-  <p><%= t(".tour_name") %>:<%= @tour.name %></p>
-  <p><%= t(".tour_price") %>:<%= @tour.price %></p>
-  <p><%= t(".tour_start_time") %>:<%= l @tour.start_time, format: Settings.format_time %></p>
+  <p><%= t(".name") %>: <%= current_user.name %></p>
+  <p><%= t(".tour_name") %>: <%= @tour.name %></p>
+  <p><%= t(".tour_price") %>: <%= number_to_currency currency(@tour.price) %></p>
+  <p><%= t(".tour_start_time") %>: <%= l @tour.start_time, format: :short %></p>
 </div>
 <%= form_for @booking do |f| %>
   <%= f.hidden_field :tour_id, value: @tour.id %>

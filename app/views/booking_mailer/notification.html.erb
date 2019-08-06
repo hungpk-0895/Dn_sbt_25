@@ -5,8 +5,8 @@
   <li>
     <p>Place: <%= @tour.place %></p>
     <p>Price: <%= @tour.price %></p>
-    <p>Start time: <%= l(@tour.start_time, format: Settings.format_time) %></p>
-    <p>Finish time: <%= l(@tour.finish_time, format: Settings.format_time) %></p>
+    <p>Start time: <%= l(@tour.start_time, format: :short) %></p>
+    <p>Finish time: <%= l(@tour.finish_time, format: :short) %></p>
   </li>
 </ul>
 <p>Thank you!</p>

@@ -1,6 +1,6 @@
 class Booking < ApplicationRecord
   belongs_to :user
-  belongs_to :tour
+  belongs_to :tour, ->{with_deleted}
   belongs_to :payment
   delegate :name, :place, :price, :start_time, :finish_time, :count_book,
     to: :tour, prefix: true

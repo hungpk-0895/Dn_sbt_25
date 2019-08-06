@@ -1,4 +1,5 @@
 class Tour < ApplicationRecord
+  acts_as_paranoid
   belongs_to :category
   enum status: {opening: 0, full: 1, finished: 2}
   has_many :bookings
@@ -20,6 +21,7 @@ class Tour < ApplicationRecord
   scope :top_views, ->{order(count_views: :desc)}
   scope :new_tours, ->{order(created_at: :desc)}
   scope :search_place, ->(key){where("place LIKE :place", place: "%#{key}%")}
+  scope :tour_opening, ->{where(status: :opening)}
 
   class << self
     def find_tour name

@@ -19,6 +19,7 @@ vi:
         btn_accept: "Chấp nhận"
         btn_reject: "Từ chối"
         btn_delete: "Xóa"
+        confirm: "Bạn chắc chắn?"
       reject_booking:
         success: "Cập nhật thành công"
         not_found: "Không tìm thấy chuyến đi được đặt"
@@ -38,12 +39,16 @@ vi:
         status: "Trạng thái"
         created_at: "Đặt lúc"
     categories:
+      form:
+        parent_id: "Danh mục chính"
       load_parent_cat:
         not_found_parent: "Không tìm thấy danh mục cha"
       load_category:
         not_found_categories: "Không tìm thấy danh mục"
       index:
         title: "Danh mục"
+        manager_category: "Quản lý danh mục"
+        name: "Danh mục chính"
         btn_delete: "Xóa"
         btn_create: "Tạo danh mục"
         confirm: "Bạn chắc chắn không?"
@@ -142,8 +147,14 @@ vi:
     booking:
       btn_cancel: "Hủy"
       confirm: "Bạn chắc chắn?"
+      destroyed: "Đã bị hủy"
     load_tour:
       not_found: "Không tìm thấy tour"
+    form_booking:
+      name: "Tên của bạn"
+      tour_name: "Tên chuyến đi"
+      tour_price: "Giá"
+      tour_start_time: "Thời gian bắt đầu"
     new:
       title: "Đặt chuyến đi"
       btn_confirm: "Xác nhận"
@@ -162,6 +173,7 @@ vi:
       finish_time: "Thời gian kết thúc"
       status: "Trạng thái"
       created_at: "Đặt lúc"
+      history_booking: "Lịch sử đặt chuyến đi"
   booking_mailer:
     notification:
       subject: "Thông báo đặt tour du lịch"
@@ -288,13 +300,9 @@ vi:
           format: "%n %u"
           precision: 0
           unit: "đồng"
-  activerecord:
-    enums:
-      tour:
-        statuses:
-          openning: "Đang mở"
-          full: "Hết chỗ"
-          finished: "Đã kết thúc"
+  time:
+    formats:
+      short: "%d/%m/%Y - %H:%M %p"
   check:
     no_permission: "Bạn không có quyền truy cập"
     require_login: "Bạn phải đăng nhập trước"

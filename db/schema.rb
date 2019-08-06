@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_01_014548) do
+ActiveRecord::Schema.define(version: 2019_08_07_070650) do
 
   create_table "bankings", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "information"
@@ -92,7 +92,10 @@ ActiveRecord::Schema.define(version: 2019_08_01_014548) do
     t.integer "count_views", default: 0
     t.integer "count_book", default: 0
     t.integer "max_slot"
+    t.datetime "deleted_at"
     t.index ["category_id"], name: "index_tours_on_category_id"
+    t.index ["deleted_at"], name: "index_tours_on_deleted_at"
+    t.index ["name"], name: "name_UNIQUE", unique: true
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

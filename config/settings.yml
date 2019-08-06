@@ -19,10 +19,10 @@ limit_page:
   top_views: 8
   booking: 10
   tour_search: 5
-format_time: "%-d/%-m/%y: %H:%M"
 locale_en: "en"
 size_img:
   small: "200x200"
   tour: "400x400"
   home: "262x200"
   news_tour: "850x400"
+  tour_booking: "600x400"

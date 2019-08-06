@@ -4,10 +4,10 @@
   <td><%= booking.tour_name %></td>
   <td><%= booking.tour_place %></td>
   <td><%= number_to_currency currency(booking.tour_price) %></td>
-  <td><%= l booking.tour_start_time, format: Settings.format_time %></td>
-  <td><%= l booking.tour_finish_time, format: Settings.format_time %></td>
-  <td><%= booking.status %></td>
-  <td><%= l booking.created_at, format: Settings.format_time %></td>
+  <td><%= l booking.tour_start_time, format: :short %></td>
+  <td><%= l booking.tour_finish_time, format: :short %></td>
+  <td><span class = "<%= booking.status %>"><%= enum_l booking, :status %></td></span>
+  <td><%= l booking.created_at, format: :short %></td>
   <td>
     <%if booking.pending? %>
       <%= link_to t(".btn_accept"), admin_booking_accept_path(booking_id: booking.id), url: {action: "accept_booking", controller: "admin:bookings", method: :put} %>
@@ -15,6 +15,6 @@
     <% end %>
   </td>
   <td>
-    <%= link_to t(".btn_delete"), admin_booking_path(booking), method: :delete %>
+    <%= link_to t(".btn_delete"), admin_booking_path(booking), method: :delete, data: {confirm: t(".confirm")} %>
   </td>
 </tr>
