@@ -12,7 +12,11 @@ Rails.application.routes.draw do
     namespace :admin do
       resources :users, only: %i(index destroy)
       resources :categories
-      resources :tours
+      resources :tours do
+        collection do
+          post :import
+        end
+      end
       resources :bookings, only: %i(index update destroy) do
         collection do
           get :export

@@ -11,7 +11,7 @@ vi:
     enums:
       tour:
         statuses:
-          openning: "Đang mở"
+          opening: "Đang mở"
           full: "Hết chỗ"
           finished: "Đã đóng"
       booking:

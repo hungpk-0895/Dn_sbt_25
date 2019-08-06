@@ -2,7 +2,20 @@
 <div class = "form_padding">
   <div class = "row">
     <div class = "col-md-8 col-md-offset-2">
-      <%= link_to t(".btn_create"), new_admin_tour_path %>
+      <div>
+        <%= link_to t(".btn_create"), new_admin_tour_path %>
+      </div>
+      <br>
+      <div class = "import-file">
+        <%= form_tag import_admin_tours_path, multipart: true do %>
+          <%= file_field_tag :file %>
+          <%= label_tag :overwrite, class: "checkbox inline" do %>
+              <span><%= t(".overwrite") %></span>
+              <%= check_box_tag :overwrite %>
+          <% end %>
+          <%= submit_tag t(".import"), class: "btn btn-success" %>
+        <% end %>
+      </div>
       <%= render "search" %>
       <% if !@tours.blank? %>
         <table class="table">

@@ -74,6 +74,16 @@ vi:
         status: "Trạng thái"
         btn_create: "Tạo tour"
         notice: "Không tìm thấy dữ liệu nào với từ khóa: "
+        overwrite: "Ghi đè"
+        import: "Nhập dữ liệu"
+      import:
+        created: "Đã thêm %{counter} chuyến đi thành công"
+        error:
+          fail: "Có lỗi xảy ra, vui lòng thử lại sau"
+          data: "Có %{c} lỗi sai danh mục, %{s} lỗi sai trạng thái chuyến đi"
+        updated:
+          success: "Đã cập nhật %{counter} chuyến đi thành công"
+          ignore: "Đã bỏ qua cập nhật %{counter} chuyến đi"
       form:
         name: "Tên Tour"
         description: "Mô tả"

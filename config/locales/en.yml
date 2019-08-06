@@ -77,6 +77,16 @@ en:
         status: "Status"
         btn_create: "Create tour"
         notice: "Not found with keyword: "
+        overwrite: "Overwrite"
+        import: "Import data"
+      import:
+        created: "Imported %{counter} tours"
+        error:
+          fail: "Something errors"
+          data: "Have %{c} errors category, %{s} errors status"
+        updated:
+          success: "Updated %{counter} tours"
+          ignore: "Ignore update %{counter} tours"
       form:
         name: "Name Tour"
         description: "Description"
