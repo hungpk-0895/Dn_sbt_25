@@ -218,11 +218,6 @@ en:
     index:
       title: "Users"
     form:
-      username: "Full name (*)"
-      email: "Email (*)"
-      phone: "Phone"
-      password: "Password (*)"
-      re_password: "Password confirmation (*)"
       btn_create: "Create account"
     create:
       check_email: "Check your email please"
@@ -261,3 +256,6 @@ en:
           format: "%n %u"
           precision: 2
           unit: "$"
+  check:
+    no_permission: "Are you sure? You aren't administration"
+    require_login: "You must login first"

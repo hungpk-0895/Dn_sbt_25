@@ -1,5 +1,5 @@
 class Admin::CategoriesController < ApplicationController
-  before_action :authenticate_user!
+  authorize_resource
   before_action :admin_user
   before_action :load_category, only: %i(edit update destroy)
   before_action :load_parent_category, only: %i(new edit)

@@ -265,3 +265,6 @@ vi:
           openning: "Đang mở"
           full: "Hết chỗ"
           finished: "Đã kết thúc"
+  check:
+    no_permission: "Bạn không có quyền truy cập"
+    require_login: "Bạn phải đăng nhập trước"

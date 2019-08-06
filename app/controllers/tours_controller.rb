@@ -1,4 +1,5 @@
 class ToursController < ApplicationController
+  authorize_resource
   before_action :find_tour, only: :show
 
   def show
