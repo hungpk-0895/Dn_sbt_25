@@ -1,7 +1,7 @@
 class Admin::BookingsController < ApplicationController
   authorize_resource
   before_action :admin_user
-  before_action :load_booking, except: %i(index)
+  before_action :load_booking, except: %i(index export)
 
   def index
     @bookings = Booking.sort_time.paginate page: params[:page],
@@ -47,6 +47,13 @@ class Admin::BookingsController < ApplicationController
   rescue ActiveRecord::RecordInvalid
     flash[:danger] = t ".fail"
     redirect_to admin_bookings_path
+  end
+
+  def export
+    @bookings = Booking.sort_time
+    respond_to do |format|
+      format.xlsx
+    end
   end
 
   private

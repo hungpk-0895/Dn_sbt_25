@@ -1,0 +1,33 @@
+require "axlsx"
+
+xlsx_package = Axlsx::Package.new
+wb = xlsx_package.workbook
+col_widths = [5, 20, 20, 20, 20, 20, 20, 20]
+wb.styles do |style|
+  name_project = style.add_style(bg_color: "FFFF00", fg_color: "0000FF", sz: 18,
+    b: true, alignment: {horizontal: :center, vertical: :center})
+  header = style.add_style(b: true)
+  wb.add_worksheet(name: "Bookings") do |sheet|
+    sheet.add_row ["List Booking"], style: name_project, height: 50
+    sheet.merge_cells "A1:J1"
+    sheet.merge_cells "A2:J2"
+    sheet.add_row
+    sheet.column_widths(*col_widths)
+    # Create the header row
+    sheet.add_row [t(".stt"), t(".username"), t(".email"), t(".name"),
+      t(".place"), t(".price"), t(".start_time"), t(".finish_time"),
+      t(".status"), t(".created_at")], style: header
+    # Create entries for each item
+    @bookings.each_with_index do |booking, index|
+      sheet.add_row [
+        index + 1, booking.user_name, booking.user_email,
+        booking.tour_name, booking.tour_place,
+        (number_to_currency currency(booking.tour_price)),
+        (l booking.tour_start_time, format: Settings.format_time),
+        (l booking.tour_finish_time, format: Settings.format_time),
+        enum_l(booking, :status),
+        (l booking.created_at, format: Settings.format_time)
+      ]
+    end
+  end
+end

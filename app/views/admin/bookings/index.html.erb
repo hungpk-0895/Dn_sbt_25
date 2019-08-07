@@ -2,6 +2,10 @@
 <div class = "form_padding">
   <div class = "row">
     <div class = "col-md-10 col-md-offset-1">
+      <div>
+        <%= t(".download") %>
+        <%= link_to "Excel", export_admin_bookings_path(format: :xlsx) %>
+      </div>
       <table class="table">
         <thead>
           <tr>
