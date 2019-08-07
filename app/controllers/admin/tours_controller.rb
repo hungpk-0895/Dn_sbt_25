@@ -1,7 +1,7 @@
 class Admin::ToursController < ApplicationController
   authorize_resource
   before_action :admin_user
-  before_action :load_tour, except: %i(index new create)
+  before_action :load_tour, except: %i(index new create import)
   before_action :load_sub_categories, only: %i(new create edit)
 
   def index
@@ -46,6 +46,17 @@ class Admin::ToursController < ApplicationController
     redirect_to admin_tours_path
   end
 
+  def import
+    if params[:file].present?
+      counter = Tour.import_file params[:file], params[:overwrite]
+      render_flash(counter)
+      flash[:success] = t(".created", counter: counter[:counter_created])
+    else
+      flash[:danger] = t(".error.fail")
+    end
+    redirect_to admin_tours_path
+  end
+
   private
   def load_tour
     @tour = Tour.find_by id: params[:id]
@@ -63,5 +74,15 @@ class Admin::ToursController < ApplicationController
   def tour_params
     params.require(:tour).permit(:name, :description, :picture, :detail,
       :place, :price, :start_time, :finish_time, :status, :category_id)
+  end
+
+  def render_flash counter
+    if params[:overwrite].present?
+      flash[:info] = t(".updated.success", counter: counter[:counter_updated])
+    else
+      flash[:warning] = t(".updated.ignore", counter: counter[:counter_updated])
+    end
+    flash[:danger] = t(".error.data", c: counter[:counter_error_category],
+      s: counter[:counter_error_status])
   end
 end

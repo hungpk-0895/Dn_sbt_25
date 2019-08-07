@@ -3,6 +3,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.1"
 
+gem "activerecord-import"
 gem "axlsx", "3.0.0.pre"
 gem "axlsx_rails", "0.5.2"
 gem "bcrypt", "3.1.12"
@@ -26,6 +27,8 @@ gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.3"
 gem "rails-i18n"
 gem "ransack"
+gem "roo"
+gem "roo-xls"
 gem "rubocop", "~> 0.54.0", require: false
 gem "rubyzip", "~> 1.2.3"
 gem "sass-rails", "~> 5.0"

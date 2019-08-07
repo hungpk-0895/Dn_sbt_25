@@ -11,7 +11,7 @@ en:
     enums:
       tour:
         statuses:
-          openning: "Openning"
+          opening: "Opening"
           full: "Full"
           finished: "Finished"
       booking:
