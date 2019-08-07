@@ -19,4 +19,5 @@ class Tour < ApplicationRecord
   scope :top_rates, ->{order(score: :desc)}
   scope :top_views, ->{order(count_views: :desc)}
   scope :new_tours, ->{order(created_at: :desc)}
+  scope :search_place, ->(key){where("place LIKE :place", place: "%#{key}%")}
 end

@@ -1,0 +1,33 @@
+<div class = "form_padding">
+  <div class="news_post">
+    <div class="post_title"><%= link_to tour_search.name ,tour_url(tour_search) %></div>
+      <div class="post_meta">
+        <ul>
+          <li><%= l tour_search.created_at, format: Settings.format_time %></li>
+        </ul>
+      </div>
+      <div class="post_text">
+        <p><%= t ".place" %>: <%= tour_search.place %></p>
+      </div>
+      <div class="post_image">
+        <%= image_tag tour_search.picture.url, size: Settings.size_img.news_tour %>
+        <%= link_to t(".book"), new_booking_path(tour_id: tour_search.id), class: "post_image_box text-center" %>
+      </div>
+      <div class="post_text">
+        <p><%= t ".description" %>: <%= tour_search.description %></p>
+      </div>
+      <div class="post_text">
+        <p><%= t ".detail" %>: <%= tour_search.detail %></p>
+      </div>
+      <div class="post_text">
+        <p><%= t ".price" %>: <%= number_to_currency currency(tour_search.price) %></p>
+      </div>
+      <div class="post_text">
+        <p><%= t ".start_time" %>: <%= l tour_search.start_time, format: Settings.format_time %></p>
+      </div>
+      <div class="post_text">
+        <p><%= t ".finish_time" %>: <%= l tour_search.finish_time, format: Settings.format_time %></p>
+      </div>
+    </div>
+  </div>
+</div>

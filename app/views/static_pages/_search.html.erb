@@ -1,0 +1,13 @@
+<div class="find_form_container">
+  <%= search_form_for @q, url: {action: "index", controller: "tours"}, id: "find_form", class: "find_form d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-between justify-content-start flex-wrap" do |f| %>
+    <div class="find_item">
+      <div><%= t (".txtDestination") %>:</div>
+      <%= f.text_field :place_cont, class: "destination find_input", required: "required", placeholder: "Enter place you want" %>
+    </div>
+    <div class="find_item">
+      <div><%= t (".txtAdventureType") %>:</div>
+      <%= f.collection_select :category_id_eq, @categories, :id, :name, class: "dropdown_item_select find_input" %>
+    </div>
+    <%= f.submit t(".btnFind"), class: "button find_button" %>
+  <% end %>
+</div>

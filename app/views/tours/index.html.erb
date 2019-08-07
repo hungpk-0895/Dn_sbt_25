@@ -1,0 +1,15 @@
+<% provide(:title, t(".title")) %>
+<div class="news">
+  <div class="container">
+    <div class = "form_padding">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="news_posts">
+            <%= render @tours %>
+          </div>
+          <%= will_paginate @tours %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

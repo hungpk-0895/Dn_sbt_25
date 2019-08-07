@@ -1,0 +1,8 @@
+<div class = "form-search">
+  <%= search_form_for [:admin, @q] do |f| %>
+    <button type="submit" class="btn btn-default">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+    <%= f.text_field :name_or_place_cont, class: "searchInput", placeholder: t(".search") %>
+  <% end %>
+</div>

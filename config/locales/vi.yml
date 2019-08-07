@@ -62,6 +62,7 @@ vi:
         start_time: "Thời gian bắt đầu"
         status: "Trạng thái"
         btn_create: "Tạo tour"
+        notice: "Không tìm thấy dữ liệu nào với từ khóa: "
       form:
         name: "Tên Tour"
         description: "Mô tả"
@@ -78,6 +79,8 @@ vi:
         title: "Tạo tour mới"
         btn_create: "Tạo"
         btn_cancel: "Hủy"
+      search:
+        search: "Tìm kiếm"
       show:
         name: "Tên tour"
         place: "Địa điểm"
@@ -190,17 +193,18 @@ vi:
     home:
       title: "Trang chủ"
       txtFind: "Tìm kiếm địa điểm cho đời bạn"
-      txtDestination: "Địa điểm"
-      txtAdventureType: "Kiểu phiêu lưu"
-      txtMinPrice: "Giá tối thiểu"
-      txtMaxPrice: "Giá tối đa"
-      btnFind: "Tìm"
       txtTopRate: "Địa điểm được đánh giá cao"
       txtTopBooking: "Địa điểm được đến nhiều nhất"
     about:
       title: "Giới thiệu"
     news:
       title: "Địa điểm mới"
+    search:
+      txtDestination: "Địa điểm"
+      txtAdventureType: "Kiểu phiêu lưu"
+      txtMinPrice: "Giá tối thiểu"
+      txtMaxPrice: "Giá tối đa"
+      btnFind: "Tìm"
   sessions:
     new:
       title: "Đăng nhập"
@@ -239,7 +243,12 @@ vi:
       success: "Cập nhật thành công"
   helpers:
     base_title: "Du lịch"
+  searchs:
+    index:
+      title: "Tìm kiếm địa điểm"
   tours:
+    index:
+      title: "Các chuyến du lịch"
     find_tour:
       not_found: "Không tìm thấy chuyến du lịch"
     show:
