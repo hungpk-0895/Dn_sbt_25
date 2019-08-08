@@ -71,6 +71,9 @@ en:
       create:
         success: "Create success"
         fail: "Create fail"
+      update:
+        success: "Update success"
+        fail: "Something errors"
     tours:
       create:
         success: "Create tour success"
@@ -96,7 +99,7 @@ en:
       import:
         created: "Imported %{counter} tours"
         error:
-          fail: "Something errors"
+          fail: "File not exist"
           data: "Have %{c} errors category, %{s} errors status"
         updated:
           success: "Updated %{counter} tours"
@@ -228,6 +231,7 @@ en:
       txtCategory: "Manager Category"
       txtManagerBooking: "Manager Booking"
       txtManagerTours: "Manager Tours"
+      your_place: "Your place"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
@@ -266,9 +270,8 @@ en:
     search:
       txtDestination: "Destination"
       txtAdventureType: "Adventure type"
-      txtMinPrice: "Min Price"
-      txtMaxPrice: "Max Price"
       btnFind: "Find"
+      enter_place: "Enter place you want"
   sessions:
     new:
       title: "Login"

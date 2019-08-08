@@ -37,7 +37,7 @@ end
 end
 
 10.times do |n|
-   name = Faker::Football.player
+   name = "#{n}" + "#{n}" + Faker::Football.player + "#{n}"
    description = Faker::Lorem.paragraph(sentence_count = 3)
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city
@@ -60,7 +60,7 @@ end
 end
 
 10.times do |n|
-   name = Faker::Football.player
+   name = Faker::Football.player + "#{n}"
    description = Faker::Lorem.paragraph(sentence_count = 3)
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city
@@ -83,7 +83,7 @@ end
 end
 
 10.times do |n|
-   name = Faker::Football.player
+   name = "#{n}" + Faker::Football.player + "#{n}" + "#{n}"
    description = Faker::Lorem.paragraph(sentence_count = 3)
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city
@@ -106,7 +106,7 @@ end
 end
 
 10.times do |n|
-   name = Faker::Football.player
+   name = Faker::Football.player + "#{n}" + "#{n}"
    description = Faker::Lorem.paragraph(sentence_count = 3)
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city
@@ -129,7 +129,7 @@ end
 end
 
 10.times do |n|
-   name = Faker::Football.player
+   name =  "#{n}" + Faker::Football.player + "#{n}"
    description = Faker::Lorem.paragraph(sentence_count = 3)
    detail = Faker::Lorem.paragraph(sentence_count = 10)
    place = Faker::Address.city

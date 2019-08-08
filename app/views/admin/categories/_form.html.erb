@@ -3,7 +3,7 @@
 
   <%= f.label :name, t(".name") %>
   <%= f.text_field :name, class: "form-control" %>
-  <% unless @category.parent_id.zero? %>
+  <% if check_parent_category(@category) %>
     <%= f.label :parent_id, t(".parent_id") %>
     <%= f.collection_select :parent_id, @parent_cats, :id, :name, include_blank: true, class: "form-control" %>
   <% end %>
