@@ -13,7 +13,7 @@ vi:
         statuses:
           opening: "Đang mở"
           full: "Hết chỗ"
-          finished: "Đã đóng"
+          finished: "Đã kết thúc"
       booking:
         statuses:
           pending: "Đang xử lý"

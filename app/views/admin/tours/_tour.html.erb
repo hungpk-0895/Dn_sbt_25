@@ -2,8 +2,8 @@
   <td><%= tour.name %></td>
   <td><%= tour.place %></td>
   <td><%= number_to_currency currency(tour.price) %></td>
-  <td><%= l tour.start_time, format: Settings.format_time %></td>
-  <td><%= enum_l(tour, :status) %></td>
+  <td><%= l tour.start_time, format: :short %></td>
+  <td><span class = "<%= tour.status %>"><%= enum_l(tour, :status) %></td></span>
   <td><%= link_to t(".btn_detail"), admin_tour_path(tour) %></td>
   <td><%= link_to t(".btn_edit"), edit_admin_tour_path(tour)%></td>
   <td><%= link_to t(".btn_delete"), admin_tour_path(tour), method: :delete, data: {confirm: t(".confirm")} %></td>

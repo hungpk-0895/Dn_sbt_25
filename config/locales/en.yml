@@ -20,6 +20,7 @@ en:
         btn_accept: "Accept"
         btn_reject: "Reject"
         btn_delete: "Delete"
+        confirm: "Are you sure?"
       reject_booking:
         success: "Update Success"
         fail: "Something errors"
@@ -40,12 +41,16 @@ en:
         status: "Status"
         created_at: "Book at"
     categories:
+      form:
+        parent_id: "Parent Category"
       load_parent_cat:
         not_found_parent: "Not found parent categories"
       load_category:
         not_found_category: "Not found categories"
       index:
         title: "Categories"
+        manager_category: "Manager category"
+        name: "Main Categories"
         btn_delete: "Delete"
         btn_create: "Create"
         confirm: "You sure"
@@ -145,8 +150,14 @@ en:
     booking:
       btn_cancel: "Cancel"
       confirm: "You sure?"
+      destroyed: "Destroyed"
     load_tour:
       not_found: "Not found tour"
+    form_booking:
+      name: "User name"
+      tour_name: "Tour name"
+      tour_price: "Price"
+      tour_start_time: "Start time"
     new:
       title: "Detail booking tour"
       btn_confirm: "Confirm"
@@ -165,6 +176,7 @@ en:
       finish_time: "Finish time"
       status: "Status"
       created_at: "Booking at"
+      history_booking: "History booking"
   booking_mailer:
     notification:
       subject: "Send mail notification booking tour"
@@ -268,6 +280,7 @@ en:
   tours:
     index:
       title: "Tours"
+
     find_tour:
       not_found: "Not found tour"
     show:
@@ -286,6 +299,9 @@ en:
           format: "%n %u"
           precision: 2
           unit: "$"
+  time:
+    formats:
+      short: "%m/%d/%Y - %H:%M %p"
   check:
     no_permission: "Are you sure? You aren't administration"
     require_login: "You must login first"

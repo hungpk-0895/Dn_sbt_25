@@ -1,30 +1,34 @@
 <% provide(:title, t(".title")) %>
 <div class = "form_padding">
-  <%= link_to t(".btn_create"), new_admin_category_path %>
-  <%= will_paginate %>
-    <table class="table">
-      <thead>
-        <tr>
-          <th><%= t(".parent_cat") %></th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @categories.each do |cat| %>
+  <div class = "row">
+    <div class = "col-md-6 col-md-offset-3">
+      <h1><%= t(".manager_category") %></h1>
+      <%= link_to t(".btn_create"), new_admin_category_path %>
+      <table class="table">
+        <thead>
           <tr>
-              <td>
-              <%= cat.name %>
-              <% load_sub_category(cat) %>
-              <% @sub_cats.each do |sub_cat| %>
-                <li>
-                  <%= sub_cat.name %>
-                  <%= link_to t(".btn_delete"), admin_category_path(sub_cat), method: :delete, data: {confirm: t(".confirm")}%>
-                </li>
-              <% end %>
-            </td>
-            <td><%= link_to t(".btn_delete"), admin_category_path(cat), method: :delete, data: {confirm: t(".confirm")}%></td>
+            <th><%= t(".name") %></th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
-  <%= will_paginate %>
+        </thead>
+        <tbody>
+          <% @categories.each do |cat| %>
+            <tr>
+                <td>
+                <%= cat.name %>
+                <% load_sub_category(cat) %>
+                <% @sub_cats.each do |sub_cat| %>
+                  <li>
+                    <%= sub_cat.name %>
+                    <%= link_to t(".btn_delete"), admin_category_path(sub_cat), method: :delete, data: {confirm: t(".confirm")}%>
+                  </li>
+                <% end %>
+              </td>
+              <td><%= link_to t(".btn_delete"), admin_category_path(cat), method: :delete, data: {confirm: t(".confirm")}%></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      <%= will_paginate %>
+    </div>
+  </div>
 </div>

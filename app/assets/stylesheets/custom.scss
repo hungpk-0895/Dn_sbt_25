@@ -6,6 +6,9 @@ $grey-yellow: #858231;
 $white: #ffffff;
 $grey: #777;
 $black: #000000;
+$grey-white: #e6e6de;
+$red: #d10505;
+$green: #02a902;
 
 body {
   padding-top: 0px;
@@ -155,9 +158,9 @@ input {
 }
 
 #error_explanation {
-  color: red;
+  color: $red;
   ul {
-    color: red;
+    color: $red;
     margin: 20px 0 20px 0px;
   }
 }
@@ -298,4 +301,36 @@ span.picture {
 .import-file {
   width: 220px;
   float: left;
+}
+
+.destroyed {
+  background-color: $red;
+  padding: 8px;
+}
+
+.cancel, .finished {
+  background-color: $grey-white;
+  padding: 8px;
+}
+.pending, .opening {
+  background-color: $yellow;
+  padding: 8px;
+}
+.accepted {
+  background-color: $green;
+  padding: 8px;
+  color: $white;
+}
+.rejected, .full {
+  background-color: $red;
+  padding: 8px;
+  color: $white;
+}
+
+.form-booking {
+  float: left;
+}
+
+.image-tour {
+  float: right;
 }
