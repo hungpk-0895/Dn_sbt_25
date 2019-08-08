@@ -2,6 +2,7 @@
 <div class = "form_padding">
   <div class = "row">
     <div class = "col-md-10 col-md-offset-1">
+      <h1><%= t(".title") %></h1>
       <div>
         <%= t(".download") %>
         <%= link_to "Excel", export_admin_bookings_path(format: :xlsx) %>
@@ -18,6 +19,7 @@
             <th><%= t(".finish_time") %></th>
             <th><%= t(".status") %></th>
             <th><%= t(".created_at") %></th>
+            <th colspan = 3><%= t(".options") %></th>
           </tr>
         </thead>
         <tbody>

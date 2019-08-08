@@ -5,7 +5,8 @@ class Admin::CategoriesController < ApplicationController
   before_action :load_parent_category, only: %i(new edit)
 
   def index
-    @categories = Category.parent_cats.paginate page: params[:page]
+    @categories = Category.parent_cats.paginate page: params[:page],
+      per_page: Settings.limit_page.tour_search
   end
 
   def new
@@ -28,7 +29,16 @@ class Admin::CategoriesController < ApplicationController
 
   def edit; end
 
-  def update; end
+  def update
+    params[:category][:parent_id] = 0 if params[:category][:parent_id].blank?
+    if @category.update_attributes category_params
+      flash[:success] = t ".success"
+      redirect_to admin_categories_path
+    else
+      flash[:danger] = t ".fail"
+      render :edit
+    end
+  end
 
   def destroy
     if @category.parent_id.zero?

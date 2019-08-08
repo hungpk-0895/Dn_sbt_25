@@ -8,24 +8,11 @@
         <thead>
           <tr>
             <th><%= t(".name") %></th>
+            <th><%= t(".options") %></th>
           </tr>
         </thead>
         <tbody>
-          <% @categories.each do |cat| %>
-            <tr>
-                <td>
-                <%= cat.name %>
-                <% load_sub_category(cat) %>
-                <% @sub_cats.each do |sub_cat| %>
-                  <li>
-                    <%= sub_cat.name %>
-                    <%= link_to t(".btn_delete"), admin_category_path(sub_cat), method: :delete, data: {confirm: t(".confirm")}%>
-                  </li>
-                <% end %>
-              </td>
-              <td><%= link_to t(".btn_delete"), admin_category_path(cat), method: :delete, data: {confirm: t(".confirm")}%></td>
-            </tr>
-          <% end %>
+          <%= render @categories %>
         </tbody>
       </table>
       <%= will_paginate %>

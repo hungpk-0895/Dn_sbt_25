@@ -3,12 +3,15 @@
 
 $yellow: #ffff00;
 $grey-yellow: #858231;
+$orange: #fdc341;
 $white: #ffffff;
 $grey: #777;
 $black: #000000;
 $grey-white: #e6e6de;
 $red: #d10505;
 $green: #02a902;
+$green-grey: #4CAF50;
+$blue: #0000ff;
 
 body {
   padding-top: 0px;
@@ -256,7 +259,7 @@ span.picture {
     }
     &:hover {
       text-decoration: none;
-      color: blue;
+      color: $blue;
     }
   }
   strong {
@@ -333,4 +336,67 @@ span.picture {
 
 .image-tour {
   float: right;
+}
+
+.table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td, .table th {
+  border: 1px solid $grey-white;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: $white;}
+
+.table tr:hover {background-color: $grey-white;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: $green-grey;
+  color: $white;
+}
+
+
+.table tr td .items {
+  padding-bottom: 2px;
+}
+
+.table ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table li {
+  color: $green;
+  padding-left: 16px;
+}
+
+.table li:before {
+  content: "•";
+  padding-right: 8px;
+  color: $blue;
+}
+
+.table ul li .edit, .table tr td .edit {
+  background-color: $yellow;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+.table ul li .delete, .table tr td .delete {
+  background-color: $red;
+  padding: 8px;
+  margin-left: 5px;
+}
+
+.table tr td .detail {
+  background-color: $orange;
+  padding: 8px;
+  margin-left: 5px;
 }

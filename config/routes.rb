@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     get "/contact", to: "static_pages#contact"
 
     namespace :admin do
-      resources :users, only: %i(index destroy)
+      resources :users, only: %i(index destroy show)
       resources :categories
       resources :tours do
         collection do

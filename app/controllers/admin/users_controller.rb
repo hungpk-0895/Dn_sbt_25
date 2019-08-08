@@ -2,9 +2,13 @@ class Admin::UsersController < ApplicationController
   authorize_resource
   before_action :admin_user
   before_action :load_users, only: :index
-  before_action :find_user, only: :destroy
+  before_action :find_user, only: %i(destroy show)
 
   def index; end
+
+  def show
+    @bookings = @user.bookings.paginate(page: params[:page])
+  end
 
   def destroy
     if @user.admin?
