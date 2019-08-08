@@ -1,0 +1,35 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= t(".tour_name") %></th>
+      <th><%= t(".place") %></th>
+      <th><%= t(".price") %></th>
+      <th><%= t(".start_time") %></th>
+      <th><%= t(".finish_time") %></th>
+      <th><%= t(".status") %></th>
+      <th><%= t(".created_at") %></th>
+      <th><%= t(".options") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bookings.each do |booking| %>
+      <tr>
+        <td><%= booking.tour_name %></td>
+        <td><%= booking.tour_place %></td>
+        <td><%= booking.tour_price %></td>
+        <td><%= l booking.tour_start_time, format: :short %></td>
+        <td><%= l booking.tour_finish_time, format: :short %></td>
+        <td><span class = "<%= booking.status %>"><%= enum_l booking, :status %></td></span>
+        <td><%= l booking.created_at, format: :short %></td>
+        <td>
+          <%if booking.pending? %>
+            <%= link_to t(".btn_accept"), admin_booking_accept_path(booking_id: booking.id), url: {action: "accept_booking", controller: "admin:bookings", method: :put} %>
+            <%= link_to t(".btn_reject"), admin_booking_reject_path(booking_id: booking.id), url: {action: "reject_booking", controller: "admin:bookings", method: :put} %>
+          <% end %>
+          <%= link_to t(".btn_delete"), admin_booking_path(booking), method: :delete, data: {confirm: t(".confirm")} %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate @bookings %>

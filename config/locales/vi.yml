@@ -12,6 +12,8 @@ vi:
         finish_time: "Thời gian kết thúc"
         status: "Trạng thái"
         created_at: "Đặt tour lúc"
+        options: "Chức năng"
+        download: "Tải về"
       accept_booking:
         success: "Cập nhật thành công"
         not_found: "Không tìm thấy chuyến đi được đặt"
@@ -39,6 +41,13 @@ vi:
         status: "Trạng thái"
         created_at: "Đặt lúc"
     categories:
+      category:
+        btn_delete: "Xóa"
+        btn_edit: "Sửa"
+        confirm: "Bạn chắc không?"
+      edit:
+        title: "Sửa danh mục"
+        btn_edit: "Lưu"
       form:
         parent_id: "Danh mục chính"
       load_parent_cat:
@@ -49,9 +58,8 @@ vi:
         title: "Danh mục"
         manager_category: "Quản lý danh mục"
         name: "Danh mục chính"
-        btn_delete: "Xóa"
         btn_create: "Tạo danh mục"
-        confirm: "Bạn chắc chắn không?"
+        options: "Chức năng"
       destroy:
         success: "Xóa danh mục thành công"
         fail: "Xóa danh mục thất bại"
@@ -81,6 +89,7 @@ vi:
         notice: "Không tìm thấy dữ liệu nào với từ khóa: "
         overwrite: "Ghi đè"
         import: "Nhập dữ liệu"
+        options: "Chức năng"
       import:
         created: "Đã thêm %{counter} chuyến đi thành công"
         error:
@@ -128,16 +137,35 @@ vi:
         email: "Địa chỉ email"
         phone: "Số điện thoại"
         title: "Quản lí người dùng"
-        btn_delete: "Xóa"
         not_have_permission: "Bạn không có quyền truy cập"
         require_login: "Vui lòng đăng nhập"
+        options: "Chức năng"
       destroy:
         success: "Xóa thành công"
         fail: "Xóa thất bại"
         not_have_role: "Không thể xóa quản trị viên"
       load_user:
         not_found: "Không tìm thấy người dùng"
+      show:
+        list_booking: "Danh sách đặt chuyến đi"
+        no_booking: "Người dùng chưa đặt chuyến đi nào"
+        username: "Tên người dùng"
+        phone: "Số điện thoại"
+        email: "Điạ chỉ email"
+      booking:
+        tour_name: "Tên chuyến đi"
+        place: "Địa điểm"
+        price: "Giá"
+        start_time: "Thời gian bắt đầu"
+        finish_time: "Thời gian kết thúc"
+        status: "Trạng thái"
+        created_at: "Đặt lúc"
+        btn_accept: "Chấp nhận"
+        btn_reject: "Từ chối"
+        btn_delete: "Xóa"
+        options: "Chức năng"
       user:
+        btn_detail: "Chi tiết"
         btn_delete: "Xóa"
         confirm: "Bạn chắc chắn không?"
   bookings:
@@ -306,3 +334,6 @@ vi:
   check:
     no_permission: "Bạn không có quyền truy cập"
     require_login: "Bạn phải đăng nhập trước"
+  will_paginate:
+    next_label: "Trang sau"
+    previous_label: "Trang trước"

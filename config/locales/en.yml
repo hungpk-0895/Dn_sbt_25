@@ -12,6 +12,8 @@ en:
         finish_time: "Finish time"
         status: "Status"
         created_at: "Booking at"
+        options: "Options"
+        download: "Download"
       accept_booking:
         success: "Update Success"
         fail: "Something errors"
@@ -41,6 +43,13 @@ en:
         status: "Status"
         created_at: "Book at"
     categories:
+      category:
+        btn_delete: "Delete"
+        btn_edit: "Edit"
+        confirm: "Are you sure?"
+      edit:
+        title: "Edit category"
+        btn_edit: "Save"
       form:
         parent_id: "Parent Category"
       load_parent_cat:
@@ -51,9 +60,8 @@ en:
         title: "Categories"
         manager_category: "Manager category"
         name: "Main Categories"
-        btn_delete: "Delete"
         btn_create: "Create"
-        confirm: "You sure"
+        options: "Options"
       destroy:
         success: "Delete category success"
         fail: "Delete category fail"
@@ -84,6 +92,7 @@ en:
         notice: "Not found with keyword: "
         overwrite: "Overwrite"
         import: "Import data"
+        options: "Options"
       import:
         created: "Imported %{counter} tours"
         error:
@@ -131,18 +140,37 @@ en:
         email: "Email"
         phone: "Phone"
         title: "Manager Users"
-        btn_delete: "Delete"
         not_have_permission: "You don't have permission"
         require_login: "Login please"
+        options: "Options"
       destroy:
         success: "Delete success"
         fail: "Delete fail"
         not_have_role: "Can not delete admin"
       load_user:
         not_found: "Not found user"
+      show:
+        list_booking: "List booking"
+        no_booking: "Users have not booked a trip yet"
+        username: "User name"
+        phone: "Number phone"
+        email: "Email address"
+      booking:
+        tour_name: "Tour name"
+        place: "Place"
+        price: "Price"
+        start_time: "Start time"
+        finish_time: "Finish time"
+        status: "Status"
+        created_at: "Book at"
+        btn_accept: "Accept"
+        btn_reject: "Reject"
+        btn_delete: "Delete"
+        options: "Options"
       user:
         btn_delete: "Delete"
         confirm: "You sure?"
+        btn_detail: "Detail"
   bookings:
     create:
       pending: "Your booking is pendding"
@@ -280,7 +308,6 @@ en:
   tours:
     index:
       title: "Tours"
-
     find_tour:
       not_found: "Not found tour"
     show:
@@ -305,3 +332,6 @@ en:
   check:
     no_permission: "Are you sure? You aren't administration"
     require_login: "You must login first"
+  will_paginate:
+    next_label: "After"
+    previous_label: "Before"

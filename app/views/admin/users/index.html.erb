@@ -1,17 +1,22 @@
 <% provide(:title, t(".title")) %>
 <div class = "form_padding">
-  <%= will_paginate %>
-    <table class="table">
-      <thead>
-        <tr>
-          <th><%= t(".username") %></th>
-          <th><%= t(".email") %></th>
-          <th><%= t(".phone") %></th>
-        </tr>
-      </thead>
-      <tbody>
-        <%= render @users %>
-      </tbody>
-    </table>
-  <%= will_paginate %>
+  <div class = "row">
+    <div class = "col-md-6 col-md-offset-3">
+      <h1><%= t(".title") %></h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th><%= t(".username") %></th>
+            <th><%= t(".email") %></th>
+            <th><%= t(".phone") %></th>
+            <th><%= t(".options") %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= render @users %>
+        </tbody>
+      </table>
+      <%= will_paginate %>
+    </div>
+  </div>
 </div>

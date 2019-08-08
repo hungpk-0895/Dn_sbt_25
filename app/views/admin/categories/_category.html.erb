@@ -1,0 +1,20 @@
+<tr>
+  <td>
+    <span class = "items"><%= category.name %></span>
+    <% load_sub_category(category) %>
+    <% @sub_cats.each do |sub_cat| %>
+      <ul class = "list-group">
+        <li class = "list-group-item">
+          <%= sub_cat.name %>
+          <span class = "badge"><%= sub_cat.tours.count %></span>
+          <span class = "edit"><%= link_to t(".btn_edit"), edit_admin_category_path(sub_cat) %></span>
+          <span class = "delete"><%= link_to t(".btn_delete"), admin_category_path(sub_cat), method: :delete, data: {confirm: t(".confirm")}%></span>
+        </li>
+      </ul>
+    <% end %>
+  </td>
+  <td>
+    <span class = "edit"><%= link_to t(".btn_edit"), edit_admin_category_path(category) %></span>
+    <span class = "delete"><%= link_to t(".btn_delete"), admin_category_path(category), method: :delete, data: {confirm: t(".confirm")}%></span>
+  </td>
+</tr>

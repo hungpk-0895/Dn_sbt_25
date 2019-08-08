@@ -1,0 +1,19 @@
+<div class = "form_padding">
+  <div class = "row">
+    <div class = "col-md-10 col-md-offset-1">
+      <div>
+        <p><%= t(".username") %>: <%= @user.name %></p>
+        <p><%= t(".phone") %>: <%= @user.phone %></p>
+        <p><%= t(".email") %>: <%= @user.email %></p>
+      </div>
+      <div>
+        <% unless @bookings.blank? %>
+          <h1><%= t(".list_booking") %></h1>
+          <%= render partial: "admin/users/booking" %>
+        <% else %>
+          <h2><%= t(".no_booking") %></h2>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
