@@ -2,7 +2,7 @@
   <%= search_form_for @q, url: {action: "index", controller: "tours"}, id: "find_form", class: "find_form d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-between justify-content-start flex-wrap" do |f| %>
     <div class="find_item">
       <div><%= t (".txtDestination") %>:</div>
-      <%= f.text_field :place_cont, class: "destination find_input", placeholder: "Enter place you want" %>
+      <%= f.text_field :place_cont, class: "destination find_input", placeholder: t(".enter_place") %>
     </div>
     <div class="find_item">
       <div><%= t (".txtAdventureType") %>:</div>

@@ -69,6 +69,9 @@ vi:
       create:
         success: "Tạo danh mục thành công"
         fail: "Tạo danh mục thất bại"
+      update:
+        success: "Chỉnh sửa danh mục thành công"
+        fail: "Chỉnh sửa thất bại, vui lòng thử lại sau"
     tours:
       create:
         success: "Tạo tour thành công"
@@ -93,7 +96,7 @@ vi:
       import:
         created: "Đã thêm %{counter} chuyến đi thành công"
         error:
-          fail: "Có lỗi xảy ra, vui lòng thử lại sau"
+          fail: "Không tìm thấy file nào"
           data: "Có %{c} lỗi sai danh mục, %{s} lỗi sai trạng thái chuyến đi"
         updated:
           success: "Đã cập nhật %{counter} chuyến đi thành công"
@@ -225,6 +228,7 @@ vi:
       txtCategory: "Quản lí danh mục"
       txtManagerBooking: "Quản lí đặt tour"
       txtManagerTours: "Quản lí tour"
+      your_place: "Tìm địa điểm"
     footer:
       language_en: "English"
       language_vi: "Tiếng Việt"
@@ -266,6 +270,7 @@ vi:
       txtMinPrice: "Giá tối thiểu"
       txtMaxPrice: "Giá tối đa"
       btnFind: "Tìm"
+      enter_place: "Nhập địa điểm bạn muốn tìm"
   sessions:
     new:
       title: "Đăng nhập"
