@@ -3,6 +3,7 @@ class Admin::ToursController < ApplicationController
   before_action :admin_user
   before_action :load_tour, except: %i(index new create import)
   before_action :load_sub_categories, only: %i(new create edit)
+  before_action :check_currency, only: %i(create update)
 
   def index
     @q = Tour.search(params[:q])
@@ -58,6 +59,13 @@ class Admin::ToursController < ApplicationController
   end
 
   private
+  def check_currency
+    return if params[:locale] == Settings.locale_en
+    price = params[:tour][:price].to_f
+    price /= 22_000
+    params[:tour][:price] = price
+  end
+
   def load_tour
     @tour = Tour.find_by id: params[:id]
     return if @tour

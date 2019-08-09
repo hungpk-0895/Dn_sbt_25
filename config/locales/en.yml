@@ -116,6 +116,7 @@ en:
         status: "Status"
         category: "Category"
         btn_cancel: "Cancel"
+        currency_unit: "(Unit: USD)"
       new:
         title: "Create new tour"
         btn_create: "Create"

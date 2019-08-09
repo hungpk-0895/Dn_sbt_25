@@ -113,6 +113,7 @@ vi:
         status: "Trạng thái"
         category: "Danh mục"
         btn_cancel: "Hủy"
+        currency_unit: "(Đơn vị: VNĐ)"
       new:
         title: "Tạo tour mới"
         btn_create: "Tạo"
